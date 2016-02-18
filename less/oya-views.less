@@ -1,0 +1,172 @@
+/*************/
+/*** VIEWS ***/
+/*************/
+
+/* OYA - Areas of Focus */
+section .view-oya-areas-of-focus {
+   	margin: 56px 56px; 
+	overflow: hidden;
+}
+.areaBox {
+        width: 388px;
+        height: 380px;
+        float: left;
+        border-bottom: 5px solid blue;
+	margin-right: 2px;
+	position: relative;
+}
+section .view-oya-areas-of-focus .views-row-last .areaBox {
+	margin: 0px;
+}
+.areaBox .field-content a {
+	color: @oya-title-color;
+	font-size: @oya-title-font;
+	text-decoration: none;
+}
+
+.areaInfoBox {
+	width: 388px;
+	height: 380px;
+	position: absolute;
+	top: 240px;
+	opacity: .50;
+	background: #375788;
+	text-align: center;
+	transition: all 0.7s ease-out;
+}
+.areaInfoBox span.field-content {
+	width: 100%;
+	text-align: center;
+	height: 30%;
+	z-index: 100;
+}
+.areaInfoBox .title-bg {
+	background: #000;
+	opacity: .50;
+	height: 100%;
+	width: 100%;
+}
+.areaInfoBox:hover {
+	top: 0px;
+}
+.areaInfoBox .learnMore {
+	background: #375788;
+	position: absolute;
+	display: block;
+	width: 100%;
+	bottom: 0;
+	font-family: @oya-font-montserrat;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+
+/* OYA - Audience Menu */
+section .view-oya-audience-menu {
+	background: @oya-am-bg;
+	padding: 30px 56px;
+	/* overflow: hidden */;
+}
+.audienceContainer {
+	position: relative;
+}
+.audienceBox {
+	width: 193px;
+	float: left;
+	margin-right: 2px;
+}
+section .view-oya-audience-menu .views-row-last .audienceBox {
+	margin-right: 0px;
+}
+.audienceBox .title-bg {
+	background: #12A6B8;
+        text-align: center;
+	height: 71px;
+	padding: 0px 30px;
+	line-height: 71px;
+}
+.audienceBox .title-bg span {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+.audienceBox .field-content a {
+	color: @oya-title-color;
+     	font-size: 20px;
+	line-height: 22px;
+	text-transform: uppercase;
+	font-family: @oya-font-montserrat;
+	text-decoration: none;
+}
+.audienceInfoBox {
+	position: absolute;
+	top: 71px;
+	width: 100%;
+	height: 299px;
+	background: #C8E5E9;
+	z-index: 100;
+}
+.audienceInfoBox .iconContainer {
+	width: 336px;
+	height: inherit;
+	background: #FFF;
+	float: left;
+	padding: 40px 60px;
+}
+.iconContainer .field-content * {
+	margin: 0 auto;
+}
+.audienceInfoBox .audienceInfoContent {
+	width: 832px;
+	float: left;
+	padding: 40px 60px;
+	font-size: 20px;
+	color: #444;
+	line-height: 26px;
+	font-family: @oya-font-montserrat;
+}
+.audienceInfoContent h1 {
+	margin: 0px 0px 15px 0px;
+	font-size: 44px;
+	color: #403F3E;
+}
+
+
+/* OYA - Featured Story Sidebar */
+.view-oya-featured-story .row {
+	margin: 0px;
+}
+.view-oya-featured-story #featured-story-container {
+	background: @oya-blue-color;
+	overflow: hidden;
+}
+.view-oya-featured-story #featured-story-container .col-sm-5 {
+	padding: 0px;
+}
+.view-oya-featured-story #featured-story-container .col-sm-7 {
+	padding: 0px;
+}
+.view-oya-featured-story .views-row {
+	position: relative;
+}
+.view-oya-featured-story .views-field-nothing {
+	background: rgba(0,0,0,0.5);
+	color: #E6E6E6;
+	padding: 10px 20px;
+	position: absolute;
+	width: 100%;
+	text-transform: uppercase;
+	bottom: 0;
+}
+.view-oya-featured-story .featured-story-title {
+	color: #FFF;
+	padding: 20px;
+}
+.view-oya-featured-story .featured-story-title a {
+	color: #FFF;
+	font-size: 23px;
+	line-height: 27px;
+}
+
+
+
