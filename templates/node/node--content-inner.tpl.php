@@ -106,19 +106,23 @@ dpm($content);
 	CONTENT-INNER FIELDS
     */
     print render($content['field_con_intro']); ?>
+
+    <?php if (!empty($content['field_con_button_support'])): ?>
     <div class="col-md-12 margin-top margin-bottom special-block-one">
-        <div class="col-md-8">
+        <div class="col-xs-12 col-sm-4 col-sm-push-8 apply-now-block-btn">
+	
+	    <a href="<?php print render($field_con_button_link['und']['0']['url']); ?>" class="btn btn-primary"><?php print render($content['field_con_button_text']); ?><div class="fa fa-chevron-circle-right"></div></a>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-sm-pull-4 apply-now-block-subtext">
 	    <?php print render($content['field_con_button_support']); ?>
         </div>
-        <div class="col-md-4">
-	    <a href="<?php print render($field_con_button_link['und']['0']['url']); ?>" class="btn btn-default"><?php print render($content['field_con_button_text']); ?> <span class="fa fa-chevron-circle-right"></span></a>
-        </div>
-    </div>
+        <div class="clearfix visible-xs-block visible-sm-block"></div>
+     
 
-  <?php 
-    print render($content['body']);
-    
-  ?>
+    </div>
+    <?php endif; ?>
+
+  <?php print render($content['body']); ?>
   <?php if (!empty($content['field_tags']) || !empty($content['links'])): ?>
   <footer>
     <?php print render($content['field_tags']); ?>

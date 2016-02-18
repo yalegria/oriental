@@ -125,15 +125,9 @@
   </header> <!-- /#page-header -->
 
   <div class="row margin-bottom">
-
-    <?php // if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-4" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php //endif; ?>
-
+    
     <!-- section<?php //print $content_column_class; ?> -->
-    <section class="col-sm-8">
+    <section class="col-xs-12 col-sm-12 col-md-8 col-md-push-4">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
@@ -157,6 +151,11 @@
       <?php print render($page['content']); ?>
     </section>
     
+    <?php // if (!empty($page['sidebar_first'])): ?>
+      <aside class="col-xs-12 col-sm-12 col-md-4 col-md-pull-8" role="complementary">
+        <?php print render($page['sidebar_first']); ?>
+      </aside>  <!-- /#sidebar-first -->
+    <?php //endif; ?>
 
   </div>
 </div>

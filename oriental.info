@@ -15,6 +15,7 @@ regions[help]           = 'Help'
 regions[content]        = 'Content'
 regions[sidebar_first]  = 'Primary'
 regions[sidebar_second] = 'Secondary'
+regions[prefooter]	= 'Pre Footer'
 regions[footer]         = 'Footer'
 regions[page_top]       = 'Page top'
 regions[page_bottom]    = 'Page bottom'
@@ -25,7 +26,7 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/style.css
-
+stylesheets[all][] = css/font-awesome.min.css
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Scripts
@@ -46,3 +47,8 @@ scripts[] = 'bootstrap/js/transition.js'
 
 ; Disable BootstrapCDN so the compiled LESS source files can be used.
 ;settings[bootstrap_cdn] = ''
+
+;;;;;;;;;;;;;;;;;;;;;
+;; YA OVERWRITE
+;;;;;;;;;;;;;;;;;;;;;
+;settings[toggle_name] = 0

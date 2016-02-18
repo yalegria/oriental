@@ -3,3 +3,206 @@
 
 // Base-theme overrides.
 @import 'overrides';
+
+// Component overrides
+@import 'buttons';
+@import 'navbar';
+
+// OYA Views
+@import 'oya-views';
+
+/****************************************************/
+/******************* YA *****************************/
+/****************************************************/
+/* Alernative Font to Proxima Nova */
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/***************/
+/*** GENERAL ***/
+/***************/
+h1 {
+	color: @oya-font-color-h1;
+}
+h2 {
+	color: @oya-font-color-h2;
+}
+h3 {
+	color: @oya-font-color-h3;
+}
+
+.hiddenContainer {
+	display: none;
+}
+.margin-bottom {
+	margin-bottom: 25px;
+}
+.margin-top {
+	margin-top: 25px;
+}
+.border-bottom {
+	border-bottom: 1px solid #FFF;
+}
+.padding-bottom {
+	padding-bottom: 25px;
+}
+/***************/
+/*** REGIONS ***/
+/***************/
+
+/*** FOOTER ***/
+footer {
+	display: table;
+}
+footer .region-footer {
+	height: 333px;
+	background: url("../images/footer-bg.jpg");
+	text-align: center;
+	display: table-cell;
+	width: 100%;
+	vertical-align: middle;
+}
+footer .region-footer section {
+	margin-bottom: 25px;
+	&:last-child {
+		margin-bottom: 0px;
+	}
+}
+footer .footer-menu-section {
+	display: inline-block;
+	width: 370px;
+	margin-top: 25px;
+}
+footer .footer-socialmedia-section {
+	display: inline-block;
+	width: 220px;
+	& > p a {
+		margin-right: 8px;
+	}
+}
+
+footer .region-footer ul.menu.nav {
+	display: inline-block;
+}
+footer .region-footer ul.menu.nav li {
+	float: left;
+        &:hover {
+		background: none;
+	}
+}
+footer .region-footer ul.menu.nav li a {
+	color: #FFF;
+	border-right: 1px solid #FFF;
+        line-height: 0px;
+	&:hover {
+		text-decoration: underline;
+		color: #4975B9;
+		background: none;
+	}
+}
+
+
+@media (min-width: 768px) {
+        .navbar-default .navbar-collapse {
+                position: absolute;
+                top: 97px;
+                z-index: 100;
+                background: #FFF;
+                left: 0;
+                opacity: .50;
+		width: 100%;
+        }
+        .navbar-default .navbar-nav > li > a {
+                font-size: 22pt;
+                text-transform: uppercase;
+        }
+}
+
+
+/****************/
+/*** SPECIALS ***/
+/****************/
+.special-block-one {
+	background: @oya-gray-color;
+	padding: 20px;
+}
+.special-block-one .apply-now-block-subtext {
+	font-style: italic;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+}
+.special-block-one .apply-now-block-btn a.btn {
+	width: 100%;
+}
+
+/*************/
+/*** ASIDE ***/
+/*************/
+aside .well {
+	background: none;
+	border: 0;
+}
+aside section {
+	margin-bottom: 100px;
+	&:last-child {
+		margin-bottom: 0px;
+	}
+}
+aside .views-field-title {
+	background: #F5F4F0;
+	padding: 20px;
+	border-bottom: 1px solid #CECDC8;
+}
+aside .views-field-title:hover {
+	background: #E5E4DE;
+}
+aside .views-field-title:hover a {
+	text-decoration: none;
+	color: #4975B9;
+}
+aside .views-field-title a {
+	font-size: 20px;
+	font-color: #375788;
+}
+
+/*********************/
+/*** CONTENT INNER ***/
+/*********************/
+.field-name-field-con-intro {
+	font-size: 26px;
+	line-height: 30px;
+	color: #6F6E6C;
+}
+.special-block-one .apply-now-block-btn .field-name-field-con-button-text {
+	margin-right: 10px;
+	display: inline-block;
+}
+
+/******************/
+/*** RESPONSIVE ***/
+/******************/
+
+
+@media (min-width: @screen-sm-min) {
+	.special-block-one .apply-now-block-subtext {
+		text-align: right;
+	}
+}
+@media (max-width: @screen-xs-max) {
+	.special-block-one .apply-now-block-subtext {
+		margin-top: 10px;
+	}
+        footer .region-footer ul.menu.nav li.last a {
+		border-right: 0px;
+	}
+
+}
+@media (min-width: @screen-sm-min) {
+	footer .footer-socialmedia-section > p {
+		position: absolute;
+		margin-top: -25px;
+	}
+	footer .footer-menu-section {
+		margin-left: 36px;
+	}
+}
