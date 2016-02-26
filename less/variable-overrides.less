@@ -17,13 +17,17 @@
 @oya-font-color-h2: 	#1091A1;
 @oya-font-color-h3:	#0C6E7A;
 
-@oya-red-color:		#C70E2A;	// bg btn, navbar-toggle 
+@oya-red-color:		#C70E2A;	// bg btn, navbar-toggle, nav link hover, 
 @oya-dark-red-color: 	#890A1D;	// bottom btn border,
 
-@oya-gray-color: 	#F5F4F0;	// apply-now-block bg,
+@oya-gray-color: 	#F5F4F0;	// apply-now-block bg, news-events-socialmedia bg
 @oya-gray2-color:	#CECDC8;	// h1 bottom border,
 
 @oya-blue-color: 	#375788;	// Featured-story headline bg,
+
+@oya-black-color:	#3F3E3D;	// nav link, 
+
+@oya-white2-color:	#F5F4F0;	// main content & sidebar bg,
 
 //== Scaffolding
 //
@@ -69,27 +73,71 @@
 @headings-color:          inherit;
 
 
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+@border-radius-base:        0px;
+
 
 //== Navbar
 //
 //##
 
 // Navbar links
-@navbar-default-link-color:                #3F3E3D;
+@navbar-default-link-color:                @oya-black-color;
+@navbar-default-link-hover-color:          @oya-red-color;
 
 // Navbar toggle
 @navbar-default-toggle-icon-bar-bg:        #FFF;
+
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+@grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         30px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+@grid-float-breakpoint:     @screen-sm-min;
+//** Point at which the navbar begins collapsing.
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
 
 
 //== Container sizes
 //
 //## Define the maximum width of `.container` for different screen sizes.
 
+// Small screen / tablet
+@container-tablet:             (720px + @grid-gutter-width);
+//** For `@screen-sm-min` and up.
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            (940px + @grid-gutter-width);
+//** For `@screen-md-min` and up.
+@container-md:                 @container-desktop;
+
 // Large screen / wide desktop
 @container-large-desktop:      (1280px + @grid-gutter-width);
 //** For `@screen-lg-min` and up.
 @container-lg:                 @container-large-desktop;
 
+
+
+
+//== Navs
+//
+//##
+
+//== Pills
+@nav-pills-border-radius:                   @border-radius-base;
+@nav-pills-active-link-hover-bg:            @component-active-bg;
+@nav-pills-active-link-hover-color:         @component-active-color;
 
 
 
@@ -108,7 +156,7 @@
 @btn-primary-border:             darken(@btn-primary-bg, 5%);
 
 // Allows for customizing button radius independently from global border radius
-@btn-border-radius-base:         0px;
+@btn-border-radius-base:         @border-radius-base;
 @btn-border-radius-large:        @border-radius-large;
 @btn-border-radius-small:        @border-radius-small;
 

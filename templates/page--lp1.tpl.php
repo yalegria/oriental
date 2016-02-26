@@ -73,6 +73,8 @@
  * @ingroup templates
  */
 ?>
+<?php dpm($variables); ?>
+<?php dpm($field_lp1_image_1_link); ?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
@@ -124,7 +126,74 @@
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
-  <div class="row">
+
+  <div class="row header-img-title margin-bottom">
+	<div class="col-md-12">
+        <?php print $field_lp1_header_image; ?>
+        <?php if (!empty($title)): ?>
+          <h1 class=""><?php print $title; ?></h1>
+        <?php endif; ?>
+        </div>
+  </div>
+
+  <div class="row no-gutter margin-bottom" id="image-btns-container">
+	<div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="image-btn-montainer">
+	    	<div class="image-btn-container">
+            	    <?php print $field_lp1_image_1; ?>
+            	</div>
+            	<div class="image-btn-hover-container">
+            	    <?php print $field_lp1_image_1_title; ?>
+		    <hr class="divider hidden-xs">
+            	    <div class="img-text hidden-xs"><?php print $field_lp1_image_1_text; ?></div>  
+            	    <div class="read-more hidden-xs"><a href="<?php print $field_lp1_image_1_link; ?>">learn more <span class="fa fa-angle-right"></span></a></div>
+            	</div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+ 	    <div class="image-btn-montainer">
+            	<div class="image-btn-container">
+		    <?php print $field_lp1_image_2; ?>
+                </div>
+                <div class="image-btn-hover-container">
+            	    <?php print $field_lp1_image_2_title; ?>
+		    <hr class="divider hidden-xs">
+               	    <div class="img-text hidden-xs"><?php print $field_lp1_image_2_text; ?></div>  
+                    <div class="read-more hidden-xs"><a href="<?php print $field_lp1_image_2_link; ?>">learn more <span class="fa fa-angle-right"></span></a></div>
+        	</div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+	    <div class="row">
+            	<div class="col-md-12">
+                    <div class="image-btn-montainer">
+ 		    	<div class="image-btn-container">
+                	    <?php print $field_lp1_image_3; ?>
+                    	</div>
+                    	<div class="image-btn-hover-container">
+            		    <?php print $field_lp1_image_3_title; ?>
+                            <div class="read-more hidden-xs"><a href="<?php print $field_lp1_image_3_link; ?>">learn more <span class="fa fa-angle-right"></span></a></div>
+      		        </div>
+                    </div>  
+                </div> 
+            </div>
+            <div class="row">
+            	<div class="col-md-12">
+                    <div class="image-btn-montainer">
+                    	<div class="image-btn-container">
+            	    	    <?php print $field_lp1_image_4; ?>
+                    	</div>
+                    	<div class="image-btn-hover-container">
+            	    	    <?php print $field_lp1_image_4_title; ?>
+                    	    <div class="read-more hidden-xs"><a href="<?php print $field_lp1_image_4_link; ?>">learn more <span class="fa fa-angle-right"></span></a></div>
+               	    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+
+  <div class="row aside-main-container">
 
     <?php // if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-4" role="complementary">
@@ -133,16 +202,13 @@
     <?php //endif; ?>
 
     <!-- section<?php //print $content_column_class; ?> -->
-    <section class="col-sm-8">
+    <section class="col-sm-8 margin-bottom">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>

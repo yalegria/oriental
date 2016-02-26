@@ -124,19 +124,41 @@
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
-  <div class="row">
-	<?php print $field_lp2_header_image; ?>
-        <?php if (!empty($title)) print $title; ?>
+
+  <div class="row header-img-title margin-bottom">
+        <div class="col-md-12">
+        <?php print $field_lp2_header_image; ?>
+        <?php if (!empty($title)): ?>
+          <h1 class=""><?php print $title; ?></h1>
+        <?php endif; ?>
+        </div>
   </div>
 
-  <div class="row" id="programs-feature">
-      <?php print field_view_field('node',$node, 'field_lp2_link_1["und"][0]["url"]'); ?>
+
+  <div class="row no-gutter margin-bottom" id="programs-feature">
+      <?php if(isset($field_lp2_link_1_text)): ?>
       <div class="col-md-3">
-         <a href="<?php print render(field_view_field('node',$node, 'field_lp2_link_1[und][0][url]')) ; ?>"><?php print render($field_lp2_link_1_text); ?></a>
+         <a href="<?php if(isset($field_lp2_link_1)) print $field_lp2_link_1; ?>"><?php print render($field_lp2_link_1_text); ?></a>
       </div>
+      <?php endif; ?>
+      <?php if(!empty($field_lp2_link_2_text)): ?>
+      <div class="col-md-3">
+         <a href="<?php if(isset($field_lp2_link_2)) print $field_lp2_link_2; ?>"><?php print render($field_lp2_link_2_text); ?></a>
+      </div>
+      <?php endif; ?>
+      <?php if(!empty($field_lp2_link_3_text)): ?>
+      <div class="col-md-3">
+         <a href="<?php if(isset($field_lp2_link_3)) print $field_lp2_link_3; ?>"><?php print render($field_lp2_link_3_text); ?></a>
+      </div>
+      <?php endif; ?>
+      <?php if(!empty($field_lp2_link_4_text)): ?>
+      <div class="col-md-3">
+         <a href="<?php if(isset($field_lp2_link_4)) print $field_lp2_link_4; ?>"><?php print render($field_lp2_link_4_text); ?></a>
+      </div>
+      <?php endif; ?>
   </div>
 
-  <div class="row margin-bottom">
+  <div class="row margin-bottom aside-main-container">
     
     <?php // if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-4" role="complementary">

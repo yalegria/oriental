@@ -1,6 +1,6 @@
 jQuery(document).ready( function() {
 	var audienceInfoBox;
-	jQuery('.audienceBox .title-bg').stop().hover(function () {
+	jQuery('body.front .audienceBox .title-bg').stop().hover(function () {
 		audienceInfoBox = jQuery(this).data("id");
 		jQuery("#" + audienceInfoBox).show();
                	//jQuery(".view-oya-audience-menu").animate({ "height": '+=' + 200 + 'px' }, "slow");
