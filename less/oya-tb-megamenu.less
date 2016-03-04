@@ -1,0 +1,29 @@
+/*** TB MEGA MENU ***/
+@media (min-width: 992px) {
+	.navbar-default .navbar-collapse {
+		padding: 0;
+	}
+}
+.tb-megamenu {
+	background: rgba(255,255,255,0.6);
+	.oya-mm-container {
+		background: rgba(255,255,255,0.8);
+	}
+}
+.tb-megamenu .mega > .mega-dropdown-menu {
+	display: inline;
+}
+.tb-megamenu:first-child .dropdown-menu  .tb-megamenu-column {
+	& li:first-child {
+
+		& > a.mega-group-title {
+
+			font-size: 18px;
+			line-height: 20px;
+			color: @oya-blue-color;
+			&:hover {
+				color: @oya-blue2-color;
+			}
+		}
+	}
+}
