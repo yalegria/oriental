@@ -12,11 +12,13 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); /*** YA ***/
 
   > .item {
     display: none;
     position: relative;
     .transition(.6s ease-in-out left);
+    z-index: -1; /*** YA ***/
 
     // Account for jankitude on images
     > img,
@@ -138,12 +140,14 @@
   .icon-prev,
   .glyphicon-chevron-left {
     left: 50%;
-    margin-left: -10px;
+    /* margin-left: -10px;  *** YA ***/
+    margin-left: 0px; /*** YA ***/
   }
   .icon-next,
   .glyphicon-chevron-right {
     right: 50%;
-    margin-right: -10px;
+    /* margin-right: -10px; *** YA ***/
+    margin-right: 0px; /*** YA ***/
   }
   .icon-prev,
   .icon-next {
@@ -219,7 +223,8 @@
   position: absolute;
   left: 15%;
   right: 15%;
-  bottom: 20px;
+  /* bottom: 20px; *** YA ***/
+  bottom: 15%; /*** YA ***/
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -248,11 +253,13 @@
     }
     .glyphicon-chevron-left,
     .icon-prev {
-      margin-left: (@carousel-control-font-size / -2);
+      /* margin-left: (@carousel-control-font-size / -2); *** YA ***/
+      margin-left: 0; /*** YA ***/
     }
     .glyphicon-chevron-right,
     .icon-next {
-      margin-right: (@carousel-control-font-size / -2);
+      /* margin-right: (@carousel-control-font-size / -2); *** YA ***/
+      margin-right: 0; /*** YA ***/
     }
   }
 
