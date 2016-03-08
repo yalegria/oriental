@@ -27,4 +27,4 @@ $targetPath .= $row->nid;
 $targetPath = 'http://'.$_SERVER['HTTP_HOST'].base_path().drupal_get_path_alias($targetPath, $path_language = '');
 ?>
 
-<a href="<?php print $targetPath; ?>">LEARN MORE > </a>
+<a href="<?php print $targetPath; ?>">LEARN MORE <span class="fa fa-angle-right"></span></a>

@@ -27,6 +27,10 @@
 	#prefooter {
 		display: none;
 	}
+	#programs-feature [class*='col-'] {
+		display: block;
+		margin-bottom: 30px;
+	}
 }
 
 /* AT MIN SMALL */
@@ -81,7 +85,32 @@
                 }
         }
 	}
+	section#block-views-oya-areas-of-focus-block {
+        	margin-top: 80px;
+        	margin-bottom: 80px;
 
+		& h2 {
+        		background: @oya-green-color;
+        		color: #FFF;
+        		padding: 30px 50px;
+        		width: 70%;
+        		text-align: center;
+        		position: absolute;
+        		top: -65px;
+        		left: 0;
+        		right: 0;
+        		margin-left: auto;
+        		margin-right: auto;
+		}
+		.see-more {
+			width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+			text-align: center;
+		}
+	}
 }
 
 
@@ -122,7 +151,33 @@
 				top: 0;
 			}       
 		}
-	}
+	}        
+	.row.no-gutter-3 {
+		padding: 0px 56px;
+		margin-right: 0px;
+		margin-left: 0px;
+		& [class*='col-']:first-child {
+			padding-left: 0px;
+		}
+                & [class*='col-']:last-child {
+			padding-right: 0px;
+		}
+		& [class*='col-'] {
+			padding: 0px 8px;
+			& .row {
+				margin: 0;
+			}
+			&:last-child {
+        			margin-right: 0;
+			}
+		}
+                & .col-md-4 .row .col-md-12 .image-btn-hover-container {
+			top: 50%;
+                        &:hover {
+				top: 0;
+			}       
+		}
+	}   
 	.aside-main-container {
 		margin: 0;
 	}

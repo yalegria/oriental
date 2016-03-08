@@ -2,11 +2,75 @@
 /*** VIEWS ***/
 /*************/
 
+/* OYA - Featured Story */
+
+section .view-carousel {
+	& a {
+		text-decoration: none;
+		color: #FFF;
+		&.carousel-control span {
+			background: @oya-red-color;
+		}
+	}
+}
+
+
 /* OYA - Areas of Focus */
 section .view-oya-areas-of-focus {
+	/* 
    	margin: 56px 56px; 
 	overflow: hidden;
+	*/
 }
+section#block-views-oya-areas-of-focus-block {
+        & .view-oya-areas-of-focus {
+		margin-bottom: 40px;
+	}
+	& .row-items:nth-child(2) {
+		display: none;
+	}
+        & h2 {
+		background: @oya-green-color;
+		color: #FFF;
+		padding: 30px 50px;
+		text-align: center;
+		margin: 0;
+		font-size: 24px;
+		margin-bottom: 40px;
+		position: relative;
+		&:after {
+			top: 100%;
+                	left: 50%;
+                	border: solid transparent;
+                	content: " ";
+                	height: 0;
+                	width: 0;
+                	position: absolute;
+                	pointer-events: none;
+                	border-width: 15px;
+                	/* margin-left: -30px; */
+                	border-top-color: @oya-green-color;
+		}
+	}
+	& .see-more {
+		border-right: 1px solid @oya-gray2-color;
+		border-left: 1px solid @oya-gray2-color;
+		border-top: 1px solid @oya-gray2-color;
+		border-bottom: 5px solid @oya-gray2-color;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: @oya-gray6-color;
+		padding: 15px;		
+		display: block;
+		cursor: pointer;
+		text-decoration: none;
+		&:hover {
+			background: @oya-gray2-color;
+			color: #FFF;
+		}
+	}
+}
+
 .areaBox {
         width: 388px;
         height: 380px;
@@ -59,6 +123,39 @@ section .view-oya-areas-of-focus .views-row-last .areaBox {
 	font-family: @oya-font-montserrat;
 	font-weight: bold;
 	font-size: 24px;
+}
+
+/* OYA - Upcoming Events */
+.view-oya-upcoming-events {
+        & .views-field-title {
+		font-size: 30px;
+		line-height: 34px;
+		width: 80%;
+		float: left;
+	}
+	& .views-field-event-calendar-date {
+		float: left;
+		width: 10%;
+		height: 150px;
+		margin: 0% 5%;
+		& .oya-event-calendar-date {
+			text-align: center;
+			& .oya-event-month {
+				font-size: 14px;
+				background: @oya-gray7-color;
+				color: #FFF;
+				float: left;
+				width: 100%;
+			        text-transform: uppercase;	
+			}	
+			& .oya-event-day {
+				float: left;
+				width: 100%;
+				color: @oya-black2-color;
+				background: #FFF;
+			}
+		}
+	}
 }
 
 

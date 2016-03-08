@@ -135,24 +135,24 @@
   </div>
 
 
-  <div class="row no-gutter margin-bottom" id="programs-feature">
+  <div class="row no-gutter-3 margin-bottom" id="programs-feature">
       <?php if(isset($field_lp2_link_1_text)): ?>
-      <div class="col-md-3">
+      <div class="col-md-3 col-xs-12">
          <a href="<?php if(isset($field_lp2_link_1)) print $field_lp2_link_1; ?>"><?php print render($field_lp2_link_1_text); ?></a>
       </div>
       <?php endif; ?>
       <?php if(!empty($field_lp2_link_2_text)): ?>
-      <div class="col-md-3">
+      <div class="col-md-3 col-xs-12">
          <a href="<?php if(isset($field_lp2_link_2)) print $field_lp2_link_2; ?>"><?php print render($field_lp2_link_2_text); ?></a>
       </div>
       <?php endif; ?>
       <?php if(!empty($field_lp2_link_3_text)): ?>
-      <div class="col-md-3">
+      <div class="col-md-3 col-xs-12">
          <a href="<?php if(isset($field_lp2_link_3)) print $field_lp2_link_3; ?>"><?php print render($field_lp2_link_3_text); ?></a>
       </div>
       <?php endif; ?>
       <?php if(!empty($field_lp2_link_4_text)): ?>
-      <div class="col-md-3">
+      <div class="col-md-3 col-xs-12">
          <a href="<?php if(isset($field_lp2_link_4)) print $field_lp2_link_4; ?>"><?php print render($field_lp2_link_4_text); ?></a>
       </div>
       <?php endif; ?>

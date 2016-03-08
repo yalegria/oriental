@@ -69,5 +69,9 @@ function oriental_preprocess_page(&$variables) {
   	        if (!empty($view['field_lp2_link_4'])) { $variables['field_lp2_link_4'] = $view['field_lp2_link_4']['#items'][0]['url']; }
                 $variables['field_lp2_link_4_text'] = drupal_render($view['field_lp2_link_4_text']);
   	}
+
+        if (drupal_is_front_page()) { 
+		$variables['title'] = ""; 
+	}
 }
 
