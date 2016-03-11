@@ -2,9 +2,29 @@
 /*** VIEWS ***/
 /*************/
 
+/* Common Components */
+.see-more {
+	border-right: 1px solid @oya-gray2-color;
+	border-left: 1px solid @oya-gray2-color;
+	border-top: 1px solid @oya-gray2-color;
+	border-bottom: 5px solid @oya-gray2-color;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: @oya-gray6-color;
+	padding: 15px;		
+	display: block;
+	cursor: pointer;
+	text-decoration: none;
+	&:hover {
+		background: @oya-gray2-color;
+		color: #FFF;
+	}
+}
+
+
 /* OYA - Featured Story */
 
-section .view-carousel {
+section#block-views-oya-carousel-block {
 	& a {
 		text-decoration: none;
 		color: #FFF;
@@ -52,23 +72,7 @@ section#block-views-oya-areas-of-focus-block {
                 	border-top-color: @oya-green-color;
 		}
 	}
-	& .see-more {
-		border-right: 1px solid @oya-gray2-color;
-		border-left: 1px solid @oya-gray2-color;
-		border-top: 1px solid @oya-gray2-color;
-		border-bottom: 5px solid @oya-gray2-color;
-		font-size: 24px;
-		text-transform: uppercase;
-		color: @oya-gray6-color;
-		padding: 15px;		
-		display: block;
-		cursor: pointer;
-		text-decoration: none;
-		&:hover {
-			background: @oya-gray2-color;
-			color: #FFF;
-		}
-	}
+	
 }
 
 .areaBox {

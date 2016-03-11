@@ -1,4 +1,4 @@
-<?php dpm($fields); ?>
+<?php //dpm($fields); ?>
 <?php /*
 <div class="areaBox">
     <?php print $fields['field_areaoffocus_image']->content; ?>

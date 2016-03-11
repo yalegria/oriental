@@ -4,14 +4,51 @@
 		padding: 0;
 	}
 }
+.navbar-default .navbar-nav {
+	&>.active>a {
+		color: @oya-black-color !important;
+		&:hover {
+			color: @oya-red-color;
+		}
+	}
+	& > .open {
+		& > a {
+			background: transparent;
+                        color: @oya-red-color !important;
+		} 
+		& > a:hover {
+			background: transparent;
+                        color: @oya-red-color !important;
+		}
+		& > a:focus, {
+			background: transparent;
+			color: @oya-red-color !important;
+		}
+	}
+	&>li>.dropdown-menu {
+		border-bottom: none;
+		background: rgba(255,255,255,0.8);
+		& ul.level-2 {
+			margin: 0px;
+			& li {
+				list-style: none;
+				border-bottom: none;
+			}
+		}
+	}
+}
 .tb-megamenu {
 	/* background: rgba(255,255,255,0.8); */
 	background-color: transparent;
+	& > ul.tb-megamenu-nav {
+		position: relative;
+	}
 	& .dropdown-menu {
 		border-bottom: none;
 	}
 	& .oya-mm-container {
 		background: rgba(255,255,255,0.8);
+		position: absolute;
 	}
 	& .nav {
 		& .active {
@@ -26,6 +63,13 @@
 				background-color: transparent;
 				border-bottom: 3px solid @oya-red-color;
 				color: @oya-black-color;
+			}
+                        &.tb-megamenu-item {
+				& .dropdown-toggle {
+					& .caret {
+						display: none;
+					}
+				}
 			}
 			& .active {
 				& > a {
@@ -65,7 +109,7 @@
 		margin-left: 10px;
 	}
 	/* .oya-mm-container > .mega-dropdown-inner > .row-fluid > [class*="span"]:first-child {*/
-        .oya-mm-container > .mega-dropdown-inner > .row-fluid > .intro-text {
+        .oya-mm-container > .mega-dropdown-inner > .row > .intro-text {
 		background: url('../images/rutgers-logo-bg.png') no-repeat;
 		background-position: 20% 20%;
 		height: 300px;

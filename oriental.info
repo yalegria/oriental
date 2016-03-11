@@ -1,5 +1,5 @@
-name = Oriental - a Bootstrap Sub-Theme (LESS)
-description = Uses the Bootstrap Framework LESS source files and must be compiled (not for beginners).
+name = Oriental
+description = A Bootstrap Sub-Theme .Uses the Bootstrap Framework LESS source files and must be compiled (not for beginners).
 core = 7.x
 base theme = bootstrap
 

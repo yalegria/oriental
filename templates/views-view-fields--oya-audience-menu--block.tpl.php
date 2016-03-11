@@ -1,4 +1,4 @@
-<?php dpm($fields); 
+<?php //dpm($fields); 
 $rawTitle = str_replace(' ','-',$fields['title']->raw); 
 ?> 
 <div class="audienceBox"> 

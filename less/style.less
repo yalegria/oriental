@@ -7,12 +7,14 @@
 // Component overrides
 @import 'buttons';
 @import 'navbar';
+@import 'carousel';
 
 // OYA Views
 @import 'oya-views';
 
 // OYA MegaMenu
-@import 'oya-tb-megamenu';
+//@import 'oya-tb-megamenu';
+@import 'oya-tb-megamenu-beta5';
 
 // Custom Responsive
 // @import 'responsive';
@@ -57,6 +59,20 @@ h3 {
 .row {
 	/* background: gold; */  
 }
+.hrcenter {
+	width: 85%;
+	border-color: @oya-gray2-color;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/************************/
+/*** END-USER CLASSES ***/
+/************************/
+.oya-red-color {
+	color: @oya-red-color;
+}
+
 /***************/
 /*** REGIONS ***/
 /***************/
@@ -79,6 +95,22 @@ h3 {
 	line-height: 68px;
 	text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
 	width: 70%;
+}
+
+/*** RESPONSIVE MENUS ***/
+.sidr {
+	background: #FFF;
+	box-shadow: 0;
+	& ul li a {
+		color: @oya-black-color;
+		text-transform: uppercase;
+	}
+}
+#sidr-wrapper-0 {
+	text-align: right;
+}
+.sidr-class-tb-megamenu-submenu {
+	display: none;
 }
 
 /*** ASIDE & MAIN CONTENT CONTAINER ***/
@@ -237,9 +269,9 @@ section.block-quicktabs {
 	}
         & .tab-content {
 		padding: 40px 56px;
-		background: gold;
+		/*background: gold;*/
                 & .tab-pane {
-			background: orange;
+			/* background: orange; */
 		}
 		& .views-row {
 			/* margin: 40px 0px; */
