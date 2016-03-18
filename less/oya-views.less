@@ -21,6 +21,67 @@
 	}
 }
 
+/* OYA - Header Image */
+section#block-views-oya-header-image-block {
+	margin-bottom: 35px;
+	& .view-content {
+		& .views-row {
+			position: relative;
+		}
+		& .views-field-field-term-image .field-content,
+                  .views-field-field-term-image-1 .field-content {
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+			& img {
+				position: relative;
+				z-index: -1;
+			}
+		}
+		& .views-field-name {
+			position: absolute;
+			bottom: 0;
+			font-size: 32px;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+			padding: 0 0 20px 40px;
+			color: #FFF;
+		}
+	}
+}
+
+/* OYA - Sub Navigation */
+.oya-sidebar-nav {
+	background: transparent;
+	& button {
+		background: #FFF;
+		border: 0;
+        }
+        & .navbar-collapse {
+		z-index: 0;
+	}
+        & .navbar-nav {
+		& li {
+			& a {
+				text-transform: initial;
+				border-right: none;
+				color: @oya-blue-color;
+				&:hover {
+					background: @oya-gray5-color;
+					color: @oya-blue2-color;
+				}
+			}
+		}
+		
+	}
+        & .navbar-toggle {
+		& .icon-bar {
+			background-color: @oya-blue-color;
+		
+		}
+	}
+}
+
+
+
+
 
 /* OYA - Featured Story */
 

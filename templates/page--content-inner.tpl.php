@@ -97,7 +97,7 @@
     </div>
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-      <div class="navbar-collapse collapse">
+      <div class="navbar-collapse collapse oya-nav">
         <nav role="navigation">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
@@ -123,6 +123,13 @@
 
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
+
+  <div class="row visible-xs visible-sm">
+      <div class="col-md-12">
+      <?php print views_embed_view('oya_sub_navigation_sibling', 'block'); ?>
+      <?php //print render($page['sidebar_first']['views_oya_sub_navigation-block']['#markup']); ?>
+      </div>
+  </div>
 
   <div class="row margin-bottom">
     

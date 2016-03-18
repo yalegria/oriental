@@ -127,6 +127,19 @@
 	}
 }
 
+/* AT MAX SMALL */
+@media (max-width: @screen-sm-max) {
+	/* OYA - Sub Navigation */
+	.oya-sidebar-nav {
+        	& .navbar-brand {
+                	width: auto;
+                	margin-top: 0px;
+                	margin-left: 0px;
+                	color: @oya-blue-color;
+        	}
+	}
+}
+
 
 /* AT MIN MEDIUM */
 @media (min-width: @screen-md-min) {
@@ -141,8 +154,29 @@
         }
         .navbar-default .navbar-nav > li > a {
                 font-size: 22px;
-                text-transform: uppercase;
+                /* text-transform: uppercase; */
         }
+	.oya-sidebar-nav {
+		& .navbar-collapse {
+			position: relative;
+			top: 0;
+			background: none;
+		        z-index: 0;	
+		}
+		& .navbar-header {
+			display: none;
+		}
+		& ul {
+			& li {
+				display: block;
+				width: 100%;
+				& a {
+					display: block;
+					text-transform: normal;
+				}
+			}
+		}
+	}
 }
 
 /* AT MIN LARGE */
