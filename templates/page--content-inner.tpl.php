@@ -86,6 +86,8 @@
         <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
       <?php endif; ?>
 
+            
+      <?php /*
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
@@ -94,7 +96,10 @@
           <span class="icon-bar"></span>
         </button>
       <?php endif; ?>
+      */ ?>
+
     </div>
+
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse oya-nav">
@@ -123,6 +128,14 @@
 
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
+
+  <div class="row">
+      <div class="col-md-12">
+      <?php print views_embed_view('oya_menu_back_reset_link', 'block'); ?>
+      <?php //print render($page['sidebar_first']['views_oya_sub_navigation-block']['#markup']); ?>
+      </div>
+  </div>
+
 
   <div class="row visible-xs visible-sm">
       <div class="col-md-12">

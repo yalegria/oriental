@@ -86,6 +86,7 @@
         <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
       <?php endif; ?>
 
+      <?php /*
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
@@ -94,6 +95,7 @@
           <span class="icon-bar"></span>
         </button>
       <?php endif; ?>
+      */ ?>
     </div>
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
@@ -158,12 +160,20 @@
       <?php endif; ?>
   </div>
 
+
+
+
   <div class="row margin-bottom aside-main-container">
     
     <?php // if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-4" role="complementary">
+    <div class="col-md-12">
+        <?php print views_embed_view('oya_menu_back_reset_link', 'block'); ?>
+        <?php //print render($page['sidebar_first']['views_oya_sub_navigation-block']['#markup']); ?>
+    </div>
+
+    <aside class="col-sm-4" role="complementary">
         <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
+    </aside>  <!-- /#sidebar-first -->
     <?php //endif; ?>
 
     <!-- section<?php //print $content_column_class; ?> -->

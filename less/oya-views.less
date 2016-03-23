@@ -47,11 +47,24 @@ section#block-views-oya-header-image-block {
 	}
 }
 
+/* OYA - Menu Back Reset Link */
+
+.view-oya-menu-back-reset-link {
+	padding: 20px;
+	& a {
+		color: @oya-gray7-color;
+		text-transform: uppercase;
+		font-style: italic;
+	}
+}
+
+
+
 /* OYA - Sub Navigation */
 .oya-sidebar-nav {
 	background: transparent;
 	& button {
-		background: #FFF;
+		background: transparent;
 		border: 0;
         }
         & .navbar-collapse {
@@ -59,13 +72,26 @@ section#block-views-oya-header-image-block {
 	}
         & .navbar-nav {
 		& li {
-			& a {
+			background: @oya-gray-color;
+			border-top: 1px solid @oya-gray2-color;
+			& > a {
 				text-transform: initial;
 				border-right: none;
 				color: @oya-blue-color;
 				&:hover {
 					background: @oya-gray5-color;
-					color: @oya-blue2-color;
+					color: @oya-blue2-color !important;
+				}
+				&.active {
+					background: @oya-gray7-color;
+					color: #FFF;
+					margin-bottom: 3px;
+				}
+			}
+			&:hover, &:focus {
+				background: @oya-gray5-color;
+				& a {
+					color: @oya-blue2-color !important;
 				}
 			}
 		}
