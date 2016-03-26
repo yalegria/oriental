@@ -15,6 +15,7 @@
     <div class="image-btn-container">
 	<?php print $fields['field_areaoffocus_image']->content; ?>
     </div>
+    <a href="<?php print $fields['path']->content ?>">
     <div class="image-btn-hover-container">
 	<div class="field">							<?php /* comply w/LP1 markup */ ?>
             <div class="field-item">						<?php /* comply w/LP1 markup */ ?>
@@ -33,6 +34,7 @@
 	    <?php print $fields['view_node']->content; ?>
         </div>
     </div>
+    </a>
 </div>
 
 

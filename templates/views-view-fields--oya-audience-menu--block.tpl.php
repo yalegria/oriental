@@ -6,14 +6,17 @@ $rawTitle = str_replace(' ','-',$fields['title']->raw);
     <?php print $fields['field_audience_image']->content; ?>
 </div>
 
-<div class="audienceInfoBox hiddenContainer" id="<?php print $rawTitle; ?>">
-    <div class="iconContainer">
+<div class="audienceInfoBox hiddenContainer row no-gutter" id="<?php print $rawTitle; ?>">
+    <div class="iconContainer hidden-sm col-md-4">
         <?php print $fields['field_icon_image']->content; ?>
 	<?php if($fields['field_icon_image_caption']) print $fields['field_icon_image_caption']->content; ?>  
     </div>
-    <div class="audienceInfoContent">
+    <div class="audienceInfoContent col-sm-12 col-md-8">
+	<?php /*
  	<?php print $fields['field_headline']->content; ?>
 	<?php if ($fields['body']) print $fields['body']->content; ?>
+        */ ?>
+        <?php print $fields['field_audience_body_flyout']->content; ?>
     </div>
 </div>
 

@@ -5,6 +5,9 @@
 	}
 }
 .navbar-default .navbar-nav {
+	& a {
+		font-family: @oya-font-montserrat;
+	}
 	&>.active>a {
 		color: @oya-black-color !important;
 		&:hover {
@@ -33,6 +36,12 @@
 			& li {
 				list-style: none;
 				border-bottom: none;
+				& a {
+					font-family: @oya-font-montserrat;
+					font-size: 18px;
+					line-height: 22px;
+				        color: @oya-black2-color;	
+				}
 			}
 		}
 	}
@@ -83,6 +92,9 @@
 				color: @oya-black-color;
 				text-transform: uppercase;
 			}
+			&.oya-hide-link {
+				display: none;
+			}
 		}
 	}
 }
@@ -93,10 +105,11 @@
 	& li:first-child {
 
 		& > a.mega-group-title {
-
+			font-family: @oya-font-montserrat;
 			font-size: 18px;
 			line-height: 20px;
 			color: @oya-blue-color;
+			text-transform: uppercase;
 			&:hover {
 				color: @oya-blue2-color;
 			}

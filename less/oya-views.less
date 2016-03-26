@@ -15,6 +15,7 @@
 	display: block;
 	cursor: pointer;
 	text-decoration: none;
+	text-align: center;
 	&:hover {
 		background: @oya-gray2-color;
 		color: #FFF;
@@ -112,12 +113,21 @@ section#block-views-oya-header-image-block {
 /* OYA - Featured Story */
 
 section#block-views-oya-carousel-block {
-	& a {
-		text-decoration: none;
-		color: #FFF;
-		&.carousel-control span {
-			background: @oya-red-color;
+	color: #FFF;
+	& h3 {
+		font-size: 46px;
+		line-height: 55px;
+		& a {
+			text-decoration: none;
+			color: #FFF;
+			font-family: @oya-font-adelle-regular;
+			&.carousel-control span {
+				background: @oya-red-color;
+			}
 		}
+	}
+	& a {
+		color: #FFF;
 	}
 }
 
@@ -131,13 +141,13 @@ section .view-oya-areas-of-focus {
 }
 section#block-views-oya-areas-of-focus-block {
         & .view-oya-areas-of-focus {
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 	& .row-items:nth-child(2) {
 		display: none;
 	}
         & h2 {
-		background: @oya-green-color;
+		background: @oya-green2-color;
 		color: #FFF;
 		padding: 30px 50px;
 		text-align: center;
@@ -145,6 +155,7 @@ section#block-views-oya-areas-of-focus-block {
 		font-size: 24px;
 		margin-bottom: 40px;
 		position: relative;
+		cursor: pointer;
 		&:after {
 			top: 100%;
                 	left: 50%;
@@ -156,7 +167,13 @@ section#block-views-oya-areas-of-focus-block {
                 	pointer-events: none;
                 	border-width: 15px;
                 	/* margin-left: -30px; */
-                	border-top-color: @oya-green-color;
+                	border-top-color: @oya-green2-color;
+		}
+		&:hover {
+			background: @oya-green-color;
+		        &:after {
+				border-top-color: @oya-green-color;
+			}	
 		}
 	}
 	
@@ -253,26 +270,65 @@ section .view-oya-areas-of-focus .views-row-last .areaBox {
 /* OYA - Audience Menu */
 section .view-oya-audience-menu {
 	background: @oya-am-bg;
-	padding: 30px 56px;
+	/* padding: 30px 56px;*/
+        padding: 30px 0px;
 	/* overflow: hidden */;
+        & > .row.no-gutter {
+		position: relative;
+	}
 }
 .audienceContainer {
-	position: relative;
+	/* position: relative; */
+	position: initial;
 }
 .audienceBox {
-	width: 193px;
+	/* width: 193px;
 	float: left;
-	margin-right: 2px;
+	margin-right: 2px;*/
 }
 section .view-oya-audience-menu .views-row-last .audienceBox {
 	margin-right: 0px;
 }
-.audienceBox .title-bg {
-	background: #12A6B8;
-        text-align: center;
-	height: 71px;
-	padding: 0px 30px;
-	line-height: 71px;
+.audienceBox { 
+	& .title-bg {
+		background: @oya-green2-color;
+        	text-align: center;
+		height: 71px;
+		/* padding: 0px 30px; */
+		line-height: 71px; 
+		position: relative;
+        	:hover {
+			&:after {
+        			top: 100%;
+                		left: 47%;
+                		border: solid transparent;
+                		content: " ";
+                		height: 0;
+                		width: 0;
+                		position: absolute;
+                		pointer-events: none;
+                		border-width: 10px;
+                		/* margin-left: -30px; */
+                		border-top-color: @oya-green2-color;
+				z-index: 2000;
+      			}
+		}
+        }
+	& .audience-image {
+		&:after {
+			position: absolute;
+			opacity: 0;
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			content: '\A';
+			background: rgba(0,0,0,0.6);
+		}
+		&:hover {
+			&:after {
+				opacity: 1;
+			}
+		}
+	}		
 }
 .audienceBox .title-bg span {
 	display: inline-block;
@@ -287,37 +343,71 @@ section .view-oya-audience-menu .views-row-last .audienceBox {
 	font-family: @oya-font-montserrat;
 	text-decoration: none;
 }
+#Prospective-Students {
+	/* display: inline; */
+}
 .audienceInfoBox {
 	position: absolute;
 	top: 71px;
 	width: 100%;
 	height: 299px;
-	background: #C8E5E9;
+	/* background: #C8E5E9; */
 	z-index: 100;
+	margin: 0 56px;
+	left: 0;
+        & .tmpContainer {
+		background: @oya-lightblue-color;
+	}
 }
 .audienceInfoBox .iconContainer {
-	width: 336px;
+	/* width: 336px; */
 	height: inherit;
 	background: #FFF;
 	float: left;
-	padding: 40px 60px;
+	padding: 40px 60px !important;
 }
 .iconContainer .field-content * {
 	margin: 0 auto;
 }
 .audienceInfoBox .audienceInfoContent {
-	width: 832px;
+	/* width: 832px; */
 	float: left;
-	padding: 40px 60px;
+	padding: 40px 60px !important;
 	font-size: 20px;
 	color: #444;
 	line-height: 26px;
 	font-family: @oya-font-montserrat;
-}
-.audienceInfoContent h1 {
-	margin: 0px 0px 15px 0px;
-	font-size: 44px;
-	color: #403F3E;
+	background: @oya-lightblue-color;
+	height: inherit;
+	& h1 {
+		margin: 0px 0px 15px 0px;
+		font-size: 44px;
+		color: #403F3E;
+		font-family: @oya-font-adelle-regular;
+	}
+	& .link-group {
+		& .link-item {
+			width: 31.3%;
+			margin-right: 3%;
+			height: 80px;
+			float: left;
+			&:last-child {
+				margin-right: 0;
+			}
+
+			& .btn-secondary {
+				width: 30%;
+				margin-right: 3%;
+				white-space: pre-wrap;
+				font-size: 20px;
+				line-height: 22px;
+				text-align: left;
+				height: 80px;
+  				display: table-cell;
+			}
+		}
+	}
+	
 }
 
 

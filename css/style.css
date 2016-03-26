@@ -1,10 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
 /**
  * Variable Overrides.
  *
  * Modify this file to override the Bootstrap Framework variables. You can copy
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
+/* YA ADDED */
+/* end ya-added */
 /* YA ADDED */
 /* END YA ADDED */
 /************ CUSTOM VARIABLES *************/
@@ -6923,6 +6924,66 @@ fieldset[disabled] .btn-primary.focus {
   color: #c70e2a;
   background-color: #ffffff;
 }
+/* YA ADDED */
+.btn-secondary {
+  color: #ffffff;
+  background-color: #12a6b8;
+  border-color: #1091a1;
+  border-bottom: 4px solid #1091a1;
+}
+.btn-secondary:focus,
+.btn-secondary.focus {
+  color: #ffffff;
+  background-color: #0d7c8a;
+  border-color: #04282d;
+}
+.btn-secondary:hover {
+  color: #ffffff;
+  background-color: #0d7c8a;
+  border-color: #0a5f69;
+}
+.btn-secondary:active,
+.btn-secondary.active,
+.open > .dropdown-toggle.btn-secondary {
+  color: #ffffff;
+  background-color: #0d7c8a;
+  border-color: #0a5f69;
+}
+.btn-secondary:active:hover,
+.btn-secondary.active:hover,
+.open > .dropdown-toggle.btn-secondary:hover,
+.btn-secondary:active:focus,
+.btn-secondary.active:focus,
+.open > .dropdown-toggle.btn-secondary:focus,
+.btn-secondary:active.focus,
+.btn-secondary.active.focus,
+.open > .dropdown-toggle.btn-secondary.focus {
+  color: #ffffff;
+  background-color: #0a5f69;
+  border-color: #04282d;
+}
+.btn-secondary:active,
+.btn-secondary.active,
+.open > .dropdown-toggle.btn-secondary {
+  background-image: none;
+}
+.btn-secondary.disabled:hover,
+.btn-secondary[disabled]:hover,
+fieldset[disabled] .btn-secondary:hover,
+.btn-secondary.disabled:focus,
+.btn-secondary[disabled]:focus,
+fieldset[disabled] .btn-secondary:focus,
+.btn-secondary.disabled.focus,
+.btn-secondary[disabled].focus,
+fieldset[disabled] .btn-secondary.focus {
+  background-color: #12a6b8;
+  border-color: #1091a1;
+}
+.btn-secondary .badge {
+  color: #12a6b8;
+  background-color: #ffffff;
+}
+/* end ya-added */
 .btn-success {
   color: #ffffff;
   background-color: #5cb85c;
@@ -7996,8 +8057,15 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   
   }
   .carousel-caption {
-    left: 20%;
-    right: 20%;
+    /* left: 20%;
+      right: 20%;*/
+  
+    /*** YA ADDED ***/
+  
+    left: 14%;
+    right: 14%;
+    /*** end ya-added ***/
+  
     padding-bottom: 30px;
   }
   .carousel-indicators {
@@ -8380,6 +8448,7 @@ address {
   display: block;
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
 }
 .see-more:hover {
   background: #cecdc8;
@@ -8459,12 +8528,23 @@ section#block-views-oya-header-image-block .view-content .views-field-name {
   background-color: #375788;
 }
 /* OYA - Featured Story */
-section#block-views-oya-carousel-block a {
-  text-decoration: none;
+section#block-views-oya-carousel-block {
   color: #FFF;
 }
-section#block-views-oya-carousel-block a.carousel-control span {
+section#block-views-oya-carousel-block h3 {
+  font-size: 46px;
+  line-height: 55px;
+}
+section#block-views-oya-carousel-block h3 a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: 'Adelle PE Regular', sans-serif;
+}
+section#block-views-oya-carousel-block h3 a.carousel-control span {
   background: #c70e2a;
+}
+section#block-views-oya-carousel-block a {
+  color: #FFF;
 }
 /* OYA - Areas of Focus */
 section .view-oya-areas-of-focus {
@@ -8475,13 +8555,13 @@ section .view-oya-areas-of-focus {
 
 }
 section#block-views-oya-areas-of-focus-block .view-oya-areas-of-focus {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 section#block-views-oya-areas-of-focus-block .row-items:nth-child(2) {
   display: none;
 }
 section#block-views-oya-areas-of-focus-block h2 {
-  background: #0e7a87;
+  background: #12a6b8;
   color: #FFF;
   padding: 30px 50px;
   text-align: center;
@@ -8489,6 +8569,7 @@ section#block-views-oya-areas-of-focus-block h2 {
   font-size: 24px;
   margin-bottom: 40px;
   position: relative;
+  cursor: pointer;
 }
 section#block-views-oya-areas-of-focus-block h2:after {
   top: 100%;
@@ -8502,6 +8583,12 @@ section#block-views-oya-areas-of-focus-block h2:after {
   border-width: 15px;
   /* margin-left: -30px; */
 
+  border-top-color: #12a6b8;
+}
+section#block-views-oya-areas-of-focus-block h2:hover {
+  background: #0e7a87;
+}
+section#block-views-oya-areas-of-focus-block h2:hover:after {
   border-top-color: #0e7a87;
 }
 .areaBox {
@@ -8553,7 +8640,7 @@ section .view-oya-areas-of-focus .views-row-last .areaBox {
   display: block;
   width: 100%;
   bottom: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Regular', sans-serif;
   font-weight: bold;
   font-size: 24px;
 }
@@ -8590,26 +8677,62 @@ section .view-oya-areas-of-focus .views-row-last .areaBox {
 /* OYA - Audience Menu */
 section .view-oya-audience-menu {
   background: #252524;
-  padding: 30px 56px;
+  /* padding: 30px 56px;*/
+
+  padding: 30px 0px;
   /* overflow: hidden */
 }
-.audienceContainer {
+section .view-oya-audience-menu > .row.no-gutter {
   position: relative;
 }
+.audienceContainer {
+  /* position: relative; */
+
+  position: initial;
+}
 .audienceBox {
-  width: 193px;
-  float: left;
-  margin-right: 2px;
+  /* width: 193px;
+	float: left;
+	margin-right: 2px;*/
+
 }
 section .view-oya-audience-menu .views-row-last .audienceBox {
   margin-right: 0px;
 }
 .audienceBox .title-bg {
-  background: #12A6B8;
+  background: #12a6b8;
   text-align: center;
   height: 71px;
-  padding: 0px 30px;
+  /* padding: 0px 30px; */
+
   line-height: 71px;
+  position: relative;
+}
+.audienceBox .title-bg :hover:after {
+  top: 100%;
+  left: 47%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-width: 10px;
+  /* margin-left: -30px; */
+
+  border-top-color: #12a6b8;
+  z-index: 2000;
+}
+.audienceBox .audience-image:after {
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  content: '\A';
+  background: rgba(0, 0, 0, 0.6);
+}
+.audienceBox .audience-image:hover:after {
+  opacity: 1;
 }
 .audienceBox .title-bg span {
   display: inline-block;
@@ -8621,40 +8744,74 @@ section .view-oya-audience-menu .views-row-last .audienceBox {
   font-size: 20px;
   line-height: 22px;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Regular', sans-serif;
   text-decoration: none;
+}
+#Prospective-Students {
+  /* display: inline; */
+
 }
 .audienceInfoBox {
   position: absolute;
   top: 71px;
   width: 100%;
   height: 299px;
-  background: #C8E5E9;
+  /* background: #C8E5E9; */
+
   z-index: 100;
+  margin: 0 56px;
+  left: 0;
+}
+.audienceInfoBox .tmpContainer {
+  background: #c8e5e9;
 }
 .audienceInfoBox .iconContainer {
-  width: 336px;
+  /* width: 336px; */
+
   height: inherit;
   background: #FFF;
   float: left;
-  padding: 40px 60px;
+  padding: 40px 60px !important;
 }
 .iconContainer .field-content * {
   margin: 0 auto;
 }
 .audienceInfoBox .audienceInfoContent {
-  width: 832px;
+  /* width: 832px; */
+
   float: left;
-  padding: 40px 60px;
+  padding: 40px 60px !important;
   font-size: 20px;
   color: #444;
   line-height: 26px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat Regular', sans-serif;
+  background: #c8e5e9;
+  height: inherit;
 }
-.audienceInfoContent h1 {
+.audienceInfoBox .audienceInfoContent h1 {
   margin: 0px 0px 15px 0px;
   font-size: 44px;
   color: #403F3E;
+  font-family: 'Adelle PE Regular', sans-serif;
+}
+.audienceInfoBox .audienceInfoContent .link-group .link-item {
+  width: 31.3%;
+  margin-right: 3%;
+  height: 80px;
+  float: left;
+}
+.audienceInfoBox .audienceInfoContent .link-group .link-item:last-child {
+  margin-right: 0;
+}
+.audienceInfoBox .audienceInfoContent .link-group .link-item .btn-secondary {
+  width: 30%;
+  margin-right: 3%;
+  white-space: pre-wrap;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: left;
+  height: 80px;
+  display: table-cell;
 }
 /* OYA - Featured Story Sidebar */
 .view-oya-featured-story .row {
@@ -8697,6 +8854,9 @@ section .view-oya-audience-menu .views-row-last .audienceBox {
     padding: 0;
   }
 }
+.navbar-default .navbar-nav a {
+  font-family: 'Montserrat Regular', sans-serif;
+}
 .navbar-default .navbar-nav > .active > a {
   color: #3f3e3d !important;
 }
@@ -8725,6 +8885,12 @@ section .view-oya-audience-menu .views-row-last .audienceBox {
 .navbar-default .navbar-nav > li > .dropdown-menu ul.level-2 li {
   list-style: none;
   border-bottom: none;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu ul.level-2 li a {
+  font-family: 'Montserrat Regular', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #403f3e;
 }
 .tb-megamenu {
   /* background: rgba(255,255,255,0.8); */
@@ -8764,14 +8930,19 @@ section .view-oya-audience-menu .views-row-last .audienceBox {
   color: #3f3e3d;
   text-transform: uppercase;
 }
+.tb-megamenu .nav > li.oya-hide-link {
+  display: none;
+}
 .tb-megamenu .mega > .mega-dropdown-menu {
   /* display: inline; */
 
 }
 .tb-megamenu:first-child .dropdown-menu .tb-megamenu-column li:first-child > a.mega-group-title {
+  font-family: 'Montserrat Regular', sans-serif;
   font-size: 18px;
   line-height: 20px;
   color: #375788;
+  text-transform: uppercase;
 }
 .tb-megamenu:first-child .dropdown-menu .tb-megamenu-column li:first-child > a.mega-group-title:hover {
   color: #4975b9;
@@ -9566,6 +9737,14 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 /******************* YA *****************************/
 /****************************************************/
 /* Alernative Font to Proxima Nova */
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat); */
+/* @font-face {
+	font-family: 'Monserrat';
+	src: url('fonts/');
+	/* src: url('fonts/riesling.eot'); */
+/*	src: local('Montserrat Regular'), url('fonts/Montserrat-Regular.ttf') format('truetype');
+}
+*/
 /***************/
 /*** GENERAL ***/
 /***************/
@@ -9640,14 +9819,41 @@ aside .region-sidebar-first.well {
 /*** RESPONSIVE MENUS ***/
 .sidr {
   background: #FFF;
-  box-shadow: 0;
+  box-shadow: none;
+}
+.sidr ul {
+  border: 0;
+}
+.sidr ul li {
+  border: 0px;
+}
+.sidr ul li.sidr-class-active a {
+  box-shadow: none;
 }
 .sidr ul li a {
   color: #3f3e3d;
   text-transform: uppercase;
+  box-shadow: none;
+}
+.sidr ul li a:active {
+  box-shadow: none;
+}
+.sidr ul li .sidr-class-oya-submenu {
+  display: block;
+}
+.sidr ul li .sidr-class-oya-submenu a {
+  padding: 0;
+  color: #12a6b8;
+}
+.sidr ul li.sidr-class-oya-hide-link > a {
+  display: none;
 }
 #sidr-wrapper-0 {
   text-align: right;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .sidr-class-tb-megamenu-submenu {
   display: none;
@@ -9767,6 +9973,7 @@ section.block-quicktabs ul.nav li a {
   margin-right: 15px;
   color: #656462;
   box-shadow: 0px 5px 0px #e5e4de;
+  cursor: pointer;
 }
 section.block-quicktabs ul.nav li:hover a {
   background: #e5e4de;
@@ -9822,6 +10029,10 @@ section.block-quicktabs .tab-content .views-field-title a {
   overflow: hidden;
   border-bottom: 5px solid #375788;
   margin-bottom: 3px;
+}
+.image-btn-montainer a {
+  color: #FFF;
+  text-decoration: none;
 }
 .image-btn-container {
   position: relative;
@@ -9924,6 +10135,9 @@ section.block-quicktabs .tab-content .views-field-title a {
   section#block-views-oya-audience-menu-block {
     display: none;
   }
+  .see-more {
+    margin-bottom: 40px;
+  }
 }
 /* AT MIN SMALL */
 @media (min-width: 768px) {
@@ -9953,6 +10167,7 @@ section.block-quicktabs .tab-content .views-field-title a {
   .image-btn-hover-container .field:first-child .field-item {
     font-size: 26px;
     line-height: 30px;
+    font-family: 'Adelle PE Regular', sans-serif;
   }
   .image-btn-hover-container .img-text .field .field-items .field-item {
     font-size: 24px;
@@ -9975,13 +10190,13 @@ section.block-quicktabs .tab-content .views-field-title a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 24px;
+    font-family: 'Montserrat Regular', sans-serif;
   }
   section#block-views-oya-areas-of-focus-block {
     margin-top: 80px;
     margin-bottom: 80px;
   }
   section#block-views-oya-areas-of-focus-block h2 {
-    background: #0e7a87;
     color: #FFF;
     padding: 30px 50px;
     width: 70%;
@@ -9999,7 +10214,6 @@ section.block-quicktabs .tab-content .views-field-title a {
     margin-right: auto;
     left: 0;
     right: 0;
-    text-align: center;
   }
 }
 /* AT MAX SMALL */
@@ -10013,6 +10227,11 @@ section.block-quicktabs .tab-content .views-field-title a {
     margin-top: 0px;
     margin-left: 0px;
     color: #375788;
+  }
+  /* VIEWS: Audience Menu */
+  .audienceBox .field-content a {
+    font-size: 12px;
+    line-height: 12px;
   }
 }
 /* AT MIN MEDIUM */
@@ -10048,9 +10267,13 @@ section.block-quicktabs .tab-content .views-field-title a {
     display: block;
     text-transform: normal;
   }
+  /* Areas of Focus */
+  section#block-views-oya-areas-of-focus-block .view-oya-areas-of-focus {
+    margin-bottom: 40px;
+  }
 }
 /* AT MIN LARGE */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .row.no-gutter {
     padding: 0px 56px;
     margin-right: 0px;

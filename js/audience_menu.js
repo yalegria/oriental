@@ -13,8 +13,19 @@ jQuery(document).ready( function() {
 	var audienceInfoBox;
 	jQuery('body.front .audienceBox .title-bg').stop().hover(function () {
 		audienceInfoBox = jQuery(this).data("id");
+
 		jQuery("#" + audienceInfoBox).show();
+                jQuery("#" + audienceInfoBox).mouseover(function() {
+			jQuery("#" + audienceInfoBox).css("display","block");
+		});
+                jQuery("#" + audienceInfoBox).mouseout(function() {
+			jQuery("#" + audienceInfoBox).css("display","none");
+		});
+
+
+
                	//jQuery(".view-oya-audience-menu").animate({ "height": '+=' + 200 + 'px' }, "slow");
+                
  		jQuery(this).parents(".view-oya-audience-menu").css("height",430);
 		jQuery('.audienceBox .title-bg').not(this).css("background","#246773");
 		var thisLink = jQuery(this).find("a");
