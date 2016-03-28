@@ -10166,11 +10166,6 @@ section.block-quicktabs .tab-content .views-field-title a {
 }
 /* AT MIN SMALL */
 @media (min-width: 768px) {
-  .navbar-brand {
-    font-size: 16px;
-    padding: 0px;
-    margin-top: 21px;
-  }
   .special-block-one .apply-now-block-subtext {
     text-align: right;
   }
@@ -10248,6 +10243,9 @@ section.block-quicktabs .tab-content .views-field-title a {
 }
 /* AT MAX SMALL */
 @media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 16px;
+  }
   /* OYA - Sub Navigation */
   .oya-sidebar-nav {
     background: #f5f4f0;
