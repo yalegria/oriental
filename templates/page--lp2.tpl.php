@@ -78,7 +78,7 @@
     <div class="navbar-header">
       <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+          <img class="img-responsive" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
       <?php endif; ?>
 
@@ -139,22 +139,22 @@
 
   <div class="row no-gutter-3 margin-bottom" id="programs-feature">
       <?php if(isset($field_lp2_link_1_text)): ?>
-      <div class="col-md-3 col-xs-12">
+      <div class="col-xs-12 col-sm-3 col-md-3">
          <a href="<?php if(isset($field_lp2_link_1)) print $field_lp2_link_1; ?>"><?php print render($field_lp2_link_1_text); ?></a>
       </div>
       <?php endif; ?>
       <?php if(!empty($field_lp2_link_2_text)): ?>
-      <div class="col-md-3 col-xs-12">
+      <div class="col-xs-12 col-sm-3 col-md-3">
          <a href="<?php if(isset($field_lp2_link_2)) print $field_lp2_link_2; ?>"><?php print render($field_lp2_link_2_text); ?></a>
       </div>
       <?php endif; ?>
       <?php if(!empty($field_lp2_link_3_text)): ?>
-      <div class="col-md-3 col-xs-12">
+      <div class="col-xs-12 col-sm-3 col-md-3">
          <a href="<?php if(isset($field_lp2_link_3)) print $field_lp2_link_3; ?>"><?php print render($field_lp2_link_3_text); ?></a>
       </div>
       <?php endif; ?>
       <?php if(!empty($field_lp2_link_4_text)): ?>
-      <div class="col-md-3 col-xs-12">
+      <div class="col-xs-12 col-sm-3 col-md-3">
          <a href="<?php if(isset($field_lp2_link_4)) print $field_lp2_link_4; ?>"><?php print render($field_lp2_link_4_text); ?></a>
       </div>
       <?php endif; ?>
@@ -171,13 +171,13 @@
         <?php //print render($page['sidebar_first']['views_oya_sub_navigation-block']['#markup']); ?>
     </div>
 
-    <aside class="col-sm-4" role="complementary">
+    <aside class="col-sm-12 col-md-4" role="complementary">
         <?php print render($page['sidebar_first']); ?>
     </aside>  <!-- /#sidebar-first -->
     <?php //endif; ?>
 
     <!-- section<?php //print $content_column_class; ?> -->
-    <section class="col-sm-8">
+    <section class="col-sm-12 col-md-8 margin-bottom">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>

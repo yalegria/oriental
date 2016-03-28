@@ -20,6 +20,7 @@
 // @import 'responsive';
 
 @import 'overrides';
+
 /****************************************************/
 /******************* YA *****************************/
 /****************************************************/
@@ -110,6 +111,19 @@ aside .region-sidebar-first.well {
 	font-family: Adelle PE Regular;
 }
 
+.oya-sidebar-nav {
+	& button.navbar-toggle {
+		position: absolute;
+		right: 0;
+	}  
+	& .navbar-brand {
+		padding: 15px 0px;
+		font-size: 23px;
+		line-height: 23px;
+	}
+}
+
+
 /*** RESPONSIVE MENUS ***/
 .sidr {
 	background: #FFF;
@@ -157,6 +171,14 @@ aside .region-sidebar-first.well {
 .sidr-class-tb-megamenu-submenu {
 	display: none;
 }
+/*** CONTENT INNER ***/
+body.node-type-content-inner {
+	& section div.view-oya-sub-navigation-sibling {
+		display: none;
+	}	
+}
+
+
 
 /*** ASIDE & MAIN CONTENT CONTAINER ***/
 .aside-main-container {

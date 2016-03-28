@@ -80,7 +80,7 @@
     <div class="navbar-header">
       <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+          <img  class="img-responsive" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
       <?php endif; ?>
 
@@ -199,13 +199,13 @@
   <div class="row aside-main-container">
 
     <?php // if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-4" role="complementary">
+      <aside class="col-sm-12 col-md-4" role="complementary">
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
     <?php //endif; ?>
 
     <!-- section<?php //print $content_column_class; ?> -->
-    <section class="col-sm-8 margin-bottom">
+    <section class="col-sm-12 col-md-8 margin-bottom">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
