@@ -8570,6 +8570,7 @@ section#block-views-oya-areas-of-focus-block h2 {
   margin-bottom: 40px;
   position: relative;
   cursor: pointer;
+  border-bottom: 3px solid #0e7a87;
 }
 section#block-views-oya-areas-of-focus-block h2:after {
   top: 100%;
