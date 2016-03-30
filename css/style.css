@@ -10206,7 +10206,8 @@ section.block-quicktabs .tab-content .views-field-title a {
   padding: 20px;
 }
 .image-btn-hover-container .field:first-child {
-  display: table-cell;
+  /* display: table-cell; */
+
 }
 .image-btn-hover-container .field:first-child .field-item {
   font-size: 26px;
