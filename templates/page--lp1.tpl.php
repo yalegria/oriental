@@ -140,6 +140,7 @@
   </div>
 
   <div class="row no-gutter margin-bottom" id="image-btns-container">
+        <?php if (!empty($field_lp1_image_1)): ?>
 	<div class="col-md-4 col-sm-4 col-xs-12">
             <div class="image-btn-montainer">
 	    	<div class="image-btn-container">
@@ -153,6 +154,9 @@
             	</div>
             </div>
         </div>
+        <?php endif; ?>
+        
+        <?php if (!empty($field_lp1_image_2)): ?>
         <div class="col-md-4 col-sm-4 col-xs-12">
  	    <div class="image-btn-montainer">
             	<div class="image-btn-container">
@@ -166,6 +170,9 @@
         	</div>
             </div>
         </div>
+        <?php endif; ?>
+
+	<?php if (!empty($field_lp1_image_3) && (!empty($field_lp1_image_4))): ?>
         <div class="col-md-4 col-sm-4 col-xs-12">
 	    <div class="row">
             	<div class="col-md-12">
@@ -194,6 +201,7 @@
                 </div>
             </div>
         </div>
+	<?php endif; ?>
   </div>
 
   <div class="row aside-main-container">

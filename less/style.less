@@ -90,6 +90,12 @@ aside .region-sidebar-first.well {
 /*** REGIONS ***/
 /***************/
 
+/*** HEADER ***/
+header.navbar-default {
+	box-shadow: none;
+}
+
+
 /*** HEADER TITLE ***/
 .header-img-title .field-type-image .field-item {
 	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); 
@@ -132,7 +138,9 @@ aside .region-sidebar-first.well {
 		border: 0;
 		& li {
 			border: 0px;
+			line-height: 35px;
 			&.sidr-class-active {
+				line-height: 35px;
 				& a {
 					box-shadow: none;
 				}
@@ -144,12 +152,104 @@ aside .region-sidebar-first.well {
 				&:active {
 					box-shadow: none;
 				}
+				&:hover {
+					box-shadow: none;
+					line-height: 35px;
+				}
+			}
+			&.sidr-class-utility-link {
+				font-size: 13px;
+			}
+			&.sidr-class-utlk3 {
+				padding-bottom: 15px;
+			}
+			&:first-child {
+				& .sidr-class-tb-megamenu-submenu {
+					display: block;
+                                        & h2 {
+						box-shadow: none;
+					}
+					& form.sidr-class-form-search {
+						& h2 {
+							display: none;
+							box-shadow: none;
+						}
+						& div.sidr-class-input-group {
+							position: relative;
+							display: table;
+							border-collapse: separate;
+							& input.sidr-class-form-control {
+								height: 39px;
+								padding: 6px 12px;
+								font-size: 15px;
+								line-height: 18px;
+								background-color: #FFF;
+								border-radius: 0px;
+								border: 1px solid #CCC;
+								display: table-cell;
+								float: left;
+								width: 100%;
+								position: relative;
+								margin-bottom: 0;
+								font-style: italic;
+								color: @oya-gray6-color;
+							}
+							& span.sidr-class-input-group-btn {
+								display: table-cell;
+								vertical-align: middle;
+								padding: 0px;
+								font-size: 0px;
+								& button {
+									color: #FFF;
+									background-color: @oya-red-color;
+									border: 1px solid transparent;
+									font-size: 16px;
+									line-height: 32px;
+									& span.sidr-class-glyphicon {
+										position: relative;
+										top: 1px;
+										display: inline-block;
+										font-family: 'Glyphicons Halflings';
+										font-style: normal;
+										font-weight: normal;
+										line-height: 1;
+										padding: 0px;
+										&:before {
+											content: "\e003";
+										}
+									}
+								}
+							}
+						}	
+						& .sidr-class-form-actions {
+							clear: both;
+							& .sidr-class-element-invisible {
+								margin: 0;
+								padding: 0;
+								width: 1px;
+								position: absolute !important;
+								overflow: hidden;
+								height: 1px;
+								clip: rect(1px,1px,1px,1px);
+							}
+						}
+					}
+				}
 			}
 			& .sidr-class-oya-submenu {
 				display: block;
+				& section#sidr-id-block-views-oya-audience-nav-menu-block {
+					& .sidr-class-views-row-first {
+						& span a {
+							border-top: 1px solid @oya-gray2-color; 
+							padding-top: 15px;
+						}
+					}	
+				}
 				& a {
 					padding: 0;
 					color: @oya-green2-color;
+					font-size: 14px;
 				}
 			}
 
@@ -171,6 +271,7 @@ aside .region-sidebar-first.well {
 .sidr-class-tb-megamenu-submenu {
 	display: none;
 }
+
 /*** CONTENT INNER ***/
 body.node-type-content-inner {
 	& section div.view-oya-sub-navigation-sibling {
