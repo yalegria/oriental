@@ -78,7 +78,7 @@
  *
  * @ingroup templates
  */
-//dpm($content);
+dpm($content);
 ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>

@@ -10009,9 +10009,11 @@ header.navbar-default {
   display: none;
 }
 /*** CONTENT INNER ***/
-body.node-type-content-inner section div.view-oya-sub-navigation-sibling {
-  display: none;
-}
+/* body.node-type-content-inner {
+	& section div.view-oya-sub-navigation-sibling {
+		display: none;
+	}	
+} */
 /*** ASIDE & MAIN CONTENT CONTAINER ***/
 .aside-main-container {
   background: #f5f4f0;
@@ -10409,6 +10411,10 @@ section.block-quicktabs .tab-content .views-field-title a {
   div.view-oya-sub-navigation-sibling .oya-sidebar-nav {
     border-top: 1px solid #cecdc8;
     border-bottom: 1px solid #cecdc8;
+  }
+  /*** CONTENT INNER ***/
+  body.node-type-content-inner section div.view-oya-sub-navigation-sibling {
+    display: none;
   }
 }
 /* AT MIN MEDIUM */
