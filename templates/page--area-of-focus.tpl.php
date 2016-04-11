@@ -86,7 +86,6 @@
         <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
       <?php endif; ?>
 
-            
       <?php /*
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -97,9 +96,7 @@
         </button>
       <?php endif; ?>
       */ ?>
-
     </div>
-
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse oya-nav">
@@ -129,34 +126,64 @@
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
-  <div class="row">
-      <div class="col-md-12">
-      <?php print views_embed_view('oya_menu_back_reset_link', 'block'); ?>
-      <?php //print render($page['sidebar_first']['views_oya_sub_navigation-block']['#markup']); ?>
-      </div>
+
+  <div class="row header-img-title margin-bottom">
+        <div class="col-md-12">
+        <?php print $field_areaoffocus_image; ?>
+        <?php if (!empty($title)): ?>
+          <h1 class=""><?php print $title; ?></h1>
+        <?php endif; ?>
+        </div>
   </div>
 
 
-  <div class="row visible-xs visible-sm">
-      <div class="col-md-12">
-      <?php print views_embed_view('oya_sub_navigation_sibling', 'block'); ?>
-      <?php //print render($page['sidebar_first']['views_oya_sub_navigation-block']['#markup']); ?>
+  <div class="row no-gutter-3 margin-bottom" id="programs-feature">
+      <?php if(isset($field_lp2_link_1_text)): ?>
+      <div class="col-xs-12 col-sm-3 col-md-3">
+         <a href="<?php if(isset($field_lp2_link_1)) print $field_lp2_link_1; ?>"><?php print render($field_lp2_link_1_text); ?></a>
       </div>
+      <?php endif; ?>
+      <?php if(!empty($field_lp2_link_2_text)): ?>
+      <div class="col-xs-12 col-sm-3 col-md-3">
+         <a href="<?php if(isset($field_lp2_link_2)) print $field_lp2_link_2; ?>"><?php print render($field_lp2_link_2_text); ?></a>
+      </div>
+      <?php endif; ?>
+      <?php if(!empty($field_lp2_link_3_text)): ?>
+      <div class="col-xs-12 col-sm-3 col-md-3">
+         <a href="<?php if(isset($field_lp2_link_3)) print $field_lp2_link_3; ?>"><?php print render($field_lp2_link_3_text); ?></a>
+      </div>
+      <?php endif; ?>
+      <?php if(!empty($field_lp2_link_4_text)): ?>
+      <div class="col-xs-12 col-sm-3 col-md-3">
+         <a href="<?php if(isset($field_lp2_link_4)) print $field_lp2_link_4; ?>"><?php print render($field_lp2_link_4_text); ?></a>
+      </div>
+      <?php endif; ?>
   </div>
 
-  <div class="row margin-bottom">
+
+
+
+  <div class="row margin-bottom aside-main-container">
     
+    <?php // if (!empty($page['sidebar_first'])): ?>
+    <div class="col-md-12">
+        <?php print views_embed_view('oya_menu_back_reset_link', 'block'); ?>
+        <?php //print render($page['sidebar_first']['views_oya_sub_navigation-block']['#markup']); ?>
+    </div>
+
+    <aside class="col-sm-12 col-md-4" role="complementary">
+        <?php print render($page['sidebar_first']); ?>
+    </aside>  <!-- /#sidebar-first -->
+    <?php //endif; ?>
+
     <!-- section<?php //print $content_column_class; ?> -->
-    <section class="<?php if (!empty($page['sidebar_first'])): ?> col-xs-12 col-sm-12 col-md-8 col-md-push-4 <?php else: ?> col-xs-12 col-sm-12 col-md-12 <?php endif; ?>">
+    <section class="col-sm-12 col-md-8 margin-bottom">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php if (!empty($tabs)): ?>
@@ -170,15 +197,15 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
     </section>
-    
-    <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-xs-12 col-sm-12 col-md-4 col-md-pull-8" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>
-
   </div>
+  <?php if (!empty($page['prefooter'])): ?>
+      <div id="prefooter">
+      <?php print render($page['prefooter']); ?>
+      </div>
+  <?php endif; ?>
 </div>
+
+
 
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">

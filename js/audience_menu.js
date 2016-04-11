@@ -2,7 +2,7 @@ jQuery(document).ready( function() {
 	/* Areas of Focus Functionality */
 	jQuery('body.front #see-more-aof').click(function () {
 		jQuery('.row-items:nth-child(2)').slideDown("slow",function() {
-			jQuery('#see-more-aof').attr("href","/areas-of-focus");
+			jQuery('#see-more-aof').attr("href","/content/areas-focus");
 			jQuery('#see-more-aof .see-more-text').html("See All");
 
 		});

@@ -8473,11 +8473,11 @@ section#block-views-oya-header-image-block .view-content .views-field-field-term
 section#block-views-oya-header-image-block .view-content .views-field-name {
   position: absolute;
   bottom: 0;
-  font-size: 32px;
+  font-size: 14px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  padding: 0 0 20px 40px;
+  padding: 0 0 10px 20px;
   color: #FFF;
-  line-height: 32px;
+  line-height: 14px;
 }
 /* OYA - Menu Back Reset Link */
 .view-oya-menu-back-reset-link {
@@ -9860,11 +9860,11 @@ header.navbar-default {
 .header-img-title h1 {
   position: absolute;
   bottom: 0;
-  padding: 0px 0px 20px 40px;
+  padding: 0px 0px 10px 20px;
   margin: 0;
   color: #FFF;
-  font-size: 68px;
-  line-height: 68px;
+  font-size: 24px;
+  line-height: 24px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   width: 70%;
   font-family: Adelle PE Regular;
@@ -10219,8 +10219,9 @@ section.block-quicktabs .tab-content .views-field-title a {
 /*** CATEGORY PAGE ***/
 /*********************/
 #programs-feature {
-  display: table;
-  vertical-align: bottom;
+  /* display: table;
+        vertical-align: bottom; */
+
 }
 #programs-feature > * {
   float: none;
@@ -10231,6 +10232,9 @@ section.block-quicktabs .tab-content .views-field-title a {
 #programs-feature .field {
   padding-bottom: 15px;
   border-bottom: 5px solid #375788;
+  display: inline-table;
+  width: 100%;
+  table-layout: fixed;
 }
 #programs-feature .field-item {
   font-size: 22px;
@@ -10308,6 +10312,16 @@ section.block-quicktabs .tab-content .views-field-title a {
 }
 /* AT MIN SMALL */
 @media (min-width: 768px) {
+  .header-img-title h1 {
+    font-size: 46px;
+    line-height: 46px;
+  }
+  /* Header */
+  section#block-views-oya-header-image-block .view-content .views-field-name {
+    font-size: 20px;
+    padding: 0 0 20px 40px;
+    line-height: 20px;
+  }
   .special-block-one .apply-now-block-subtext {
     text-align: right;
   }
@@ -10403,10 +10417,6 @@ section.block-quicktabs .tab-content .views-field-title a {
     font-size: 12px;
     line-height: 12px;
   }
-  .header-img-title h1 {
-    font-size: 46px;
-    line-height: 46px;
-  }
   /* VIEWS: OYA Sub Navigation Sibling */
   div.view-oya-sub-navigation-sibling .oya-sidebar-nav {
     border-top: 1px solid #cecdc8;
@@ -10419,6 +10429,11 @@ section.block-quicktabs .tab-content .views-field-title a {
 }
 /* AT MIN MEDIUM */
 @media (min-width: 992px) {
+  .header-img-title h1 {
+    font-size: 68px;
+    line-height: 68px;
+    padding: 0px 0px 20px 40px;
+  }
   .navbar-default .navbar-collapse {
     position: absolute;
     top: 96px;
@@ -10449,6 +10464,12 @@ section.block-quicktabs .tab-content .views-field-title a {
   .oya-sidebar-nav ul li a {
     display: block;
     text-transform: normal;
+  }
+  /* Header */
+  section#block-views-oya-header-image-block .view-content .views-field-name {
+    font-size: 32px;
+    padding: 0 0 20px 40px;
+    line-height: 32px;
   }
   /* Areas of Focus */
   section#block-views-oya-areas-of-focus-block .view-oya-areas-of-focus {

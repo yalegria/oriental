@@ -73,8 +73,6 @@
  * @ingroup templates
  */
 ?>
-<?php dpm($variables); ?>
-<?php dpm($field_lp1_image_1_link); ?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
@@ -146,12 +144,14 @@
 	    	<div class="image-btn-container">
             	    <?php print $field_lp1_image_1; ?>
             	</div>
+                <a href="<?php print $field_lp1_image_1_link; ?>">
             	<div class="image-btn-hover-container">
             	    <?php print $field_lp1_image_1_title; ?>
 		    <hr class="divider hidden-xs">
             	    <div class="img-text hidden-xs"><?php print $field_lp1_image_1_text; ?></div>  
-            	    <div class="read-more hidden-xs"><a href="<?php print $field_lp1_image_1_link; ?>">learn more <span class="fa fa-angle-right"></span></a></div>
+            	    <div class="read-more hidden-xs"><a href="<?php if (isset($field_lp1_image_1_link)) { print $field_lp1_image_1_link; } ?>">learn more <span class="fa fa-angle-right"></span></a></div>
             	</div>
+                </a>
             </div>
         </div>
         <?php endif; ?>
@@ -162,46 +162,54 @@
             	<div class="image-btn-container">
 		    <?php print $field_lp1_image_2; ?>
                 </div>
+		<a href="<?php print $field_lp1_image_2_link; ?>">
                 <div class="image-btn-hover-container">
             	    <?php print $field_lp1_image_2_title; ?>
 		    <hr class="divider hidden-xs">
                	    <div class="img-text hidden-xs"><?php print $field_lp1_image_2_text; ?></div>  
-                    <div class="read-more hidden-xs"><a href="<?php print $field_lp1_image_2_link; ?>">learn more <span class="fa fa-angle-right"></span></a></div>
+                    <div class="read-more hidden-xs"><a href="<?php if (isset($field_lp1_image_2_link)) { print $field_lp1_image_2_link; } ?>">learn more <span class="fa fa-angle-right"></span></a></div>
         	</div>
+                </a>
             </div>
         </div>
         <?php endif; ?>
 
-	<?php if (!empty($field_lp1_image_3) && (!empty($field_lp1_image_4))): ?>
         <div class="col-md-4 col-sm-4 col-xs-12">
+            <?php if (!empty($field_lp1_image_3)): ?>
 	    <div class="row">
             	<div class="col-md-12">
                     <div class="image-btn-montainer">
  		    	<div class="image-btn-container">
                 	    <?php print $field_lp1_image_3; ?>
                     	</div>
+			<a href="<?php print $field_lp1_image_3_link; ?>">
                     	<div class="image-btn-hover-container">
             		    <?php print $field_lp1_image_3_title; ?>
-                            <div class="read-more hidden-xs"><a href="<?php print $field_lp1_image_3_link; ?>">learn more <span class="fa fa-angle-right"></span></a></div>
+                            <div class="read-more hidden-xs"><a href="<?php if (isset($field_lp1_image_3_link)) { print $field_lp1_image_3_link; } ?>">learn more <span class="fa fa-angle-right"></span></a></div>
       		        </div>
+			</a>
                     </div>  
                 </div> 
             </div>
+	    <?php endif; ?>
+            <?php if (!empty($field_lp1_image_4)): ?> 
             <div class="row">
             	<div class="col-md-12">
                     <div class="image-btn-montainer">
                     	<div class="image-btn-container">
             	    	    <?php print $field_lp1_image_4; ?>
                     	</div>
+			<a href="<?php print $field_lp1_image_4_link; ?>">
                     	<div class="image-btn-hover-container">
             	    	    <?php print $field_lp1_image_4_title; ?>
-                    	    <div class="read-more hidden-xs"><a href="<?php print $field_lp1_image_4_link; ?>">learn more <span class="fa fa-angle-right"></span></a></div>
+                    	    <div class="read-more hidden-xs"><a href="<?php if (isset($field_lp1_image_4_link)) { print $field_lp1_image_4_link; } ?>">learn more <span class="fa fa-angle-right"></span></a></div>
                	    	</div>
+                        </a>
                     </div>
                 </div>
             </div>
+	    <?php endif; ?>
         </div>
-	<?php endif; ?>
   </div>
 
   <div class="row aside-main-container">

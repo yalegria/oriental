@@ -107,11 +107,11 @@ header.navbar-default {
 .header-img-title h1 {
 	position: absolute;
 	bottom:  0;
-	padding: 0px 0px 20px 40px;
+	padding: 0px 0px 10px 20px;
 	margin: 0;
 	color: #FFF;
-	font-size: 68px;
-	line-height: 68px;
+	font-size: 24px;
+	line-height: 24px;
 	text-shadow: 0px 1px 2px rgba(0,0,0,0.5);
 	width: 70%;
 	font-family: Adelle PE Regular;
@@ -498,8 +498,8 @@ section.block-quicktabs {
 /*** CATEGORY PAGE ***/
 /*********************/
 #programs-feature {
-	display: table;
-        vertical-align: bottom;
+	/* display: table;
+        vertical-align: bottom; */
         & > * {
 		float: none;
 		position: relative;
@@ -509,6 +509,9 @@ section.block-quicktabs {
 	& .field {
 		padding-bottom: 15px;
 		border-bottom: 5px solid @oya-blue-color;	
+		display: inline-table;
+		width: 100%;
+		table-layout: fixed;
 	}
 	& .field-item {	
 		font-size: 22px;

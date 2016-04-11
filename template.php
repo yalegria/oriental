@@ -29,12 +29,12 @@ function oriental_preprocess_page(&$variables) {
 
                 if (!empty($view['field_lp1_image_1'])) { $variables['field_lp1_image_1'] = drupal_render($view['field_lp1_image_1']); } 
                 $variables['field_lp1_image_1_title'] = drupal_render($view['field_lp1_image_1_title']); 
-                $variables['field_lp1_image_1_link'] = $view['field_lp1_image_1_link']['#items'][0]['url']; 
+                if (!empty($view['field_lp1_image_1_link']['#items'][0]['url'])) { $variables['field_lp1_image_1_link'] = $view['field_lp1_image_1_link']['#items'][0]['url']; }
                 $variables['field_lp1_image_1_text'] = drupal_render($view['field_lp1_image_1_text']); 
 
                 $variables['field_lp1_image_2'] = drupal_render($view['field_lp1_image_2']); 
                 $variables['field_lp1_image_2_title'] = drupal_render($view['field_lp1_image_2_title']); 
-                $variables['field_lp1_image_2_link'] = $view['field_lp1_image_2_link']['#items'][0]['url']; 
+                if (!empty($view['field_lp1_image_2_link']['#items'][0]['url'])) { $variables['field_lp1_image_2_link'] = $view['field_lp1_image_2_link']['#items'][0]['url']; } 
                 $variables['field_lp1_image_2_text'] = drupal_render($view['field_lp1_image_2_text']); 
 
                 $variables['field_lp1_image_3'] = drupal_render($view['field_lp1_image_3']); 
@@ -69,6 +69,10 @@ function oriental_preprocess_page(&$variables) {
   	        if (!empty($view['field_lp2_link_4'])) { $variables['field_lp2_link_4'] = $view['field_lp2_link_4']['#items'][0]['url']; }
                 $variables['field_lp2_link_4_text'] = drupal_render($view['field_lp2_link_4_text']);
   	}
+        if (($node = menu_get_object()) && $node->type == 'area_of_focus') {
+		$view = node_view($node);
+		$variables['field_areaoffocus_image'] = drupal_render($view['field_areaoffocus_image']);
+	}
 
         if (drupal_is_front_page()) { 
 		$variables['title'] = ""; 
