@@ -7832,7 +7832,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   -webkit-transition: 0.6s ease-in-out left;
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
-  z-index: -1;
+  /* z-index: -1; */
   /*** YA ***/
 
 }
@@ -8541,11 +8541,30 @@ section#block-views-oya-carousel-block h3 a {
   color: #FFF;
   font-family: 'Adelle PE Regular', sans-serif;
 }
-section#block-views-oya-carousel-block h3 a.carousel-control span {
+section#block-views-oya-carousel-block .carousel-control span {
   background: #c70e2a;
+  height: 34px;
 }
 section#block-views-oya-carousel-block a {
   color: #FFF;
+}
+section#block-views-oya-carousel-block div.carousel-img-container {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  width: 100%;
+  height: 100%;
+  display: table-footer-group;
+  position: relative;
+  z-index: 2000;
+}
+section#block-views-oya-carousel-block div.carousel-img-container img {
+  position: relative;
+  z-index: -11111;
+}
+section#block-views-oya-carousel-block div.carousel-caption p {
+  font-size: 22px;
+  line-height: 26px;
+  width: 80%;
+  margin: 0 auto;
 }
 /* OYA - Areas of Focus */
 section .view-oya-areas-of-focus {
@@ -8592,6 +8611,9 @@ section#block-views-oya-areas-of-focus-block h2:hover {
 }
 section#block-views-oya-areas-of-focus-block h2:hover:after {
   border-top-color: #0e7a87;
+}
+section#block-views-oya-areas-of-focus-block h2 a {
+  color: #FFF;
 }
 .areaBox {
   width: 388px;

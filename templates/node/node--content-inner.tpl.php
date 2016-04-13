@@ -78,7 +78,6 @@
  *
  * @ingroup templates
  */
-dpm($content);
 ?>
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <?php if ((!$page && !empty($title)) || !empty($title_prefix) || !empty($title_suffix) || $display_submitted): ?>
@@ -107,14 +106,14 @@ dpm($content);
     */
     print render($content['field_con_intro']); ?>
 
-    <?php if (!empty($content['field_con_button_support'])): ?>
+    <?php if (!empty($content['field_con_button_support_text'])): ?>
     <div class="col-md-12 margin-top margin-bottom special-block-one">
         <div class="col-xs-12 col-sm-4 col-sm-push-8 apply-now-block-btn">
 	
 	    <a href="<?php print render($field_con_button_link['und']['0']['url']); ?>" class="btn btn-primary"><?php print render($content['field_con_button_text']); ?><div class="fa fa-chevron-circle-right"></div></a>
         </div>
         <div class="col-xs-12 col-sm-8 col-sm-pull-4 apply-now-block-subtext">
-	    <?php print render($content['field_con_button_support']); ?>
+	    <?php print render($content['field_con_button_support_text']); ?>
         </div>
         <div class="clearfix visible-xs-block visible-sm-block"></div>
      

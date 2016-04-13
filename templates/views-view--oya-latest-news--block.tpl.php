@@ -92,6 +92,6 @@
 
 <div class="row margin-top">
         <div class="col-xs-12">
-                <a id="see-more-aof" class="see-more">see all news stories <span class="fa fa-chevron-circle-right"></span></a>
+                <a href="/content/news" id="see-more-aof" class="see-more">see all news stories <span class="fa fa-chevron-circle-right"></span></a>
         </div>
 </div>
