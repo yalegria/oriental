@@ -8554,11 +8554,11 @@ section#block-views-oya-carousel-block div.carousel-img-container {
   height: 100%;
   display: table-footer-group;
   position: relative;
-  z-index: 2000;
+  z-index: 10;
 }
 section#block-views-oya-carousel-block div.carousel-img-container img {
   position: relative;
-  z-index: -11111;
+  z-index: -1;
 }
 section#block-views-oya-carousel-block div.carousel-caption p {
   font-size: 22px;
