@@ -145,8 +145,6 @@
   </div>
 
   <div class="row margin-bottom">
-    
-    <!-- section<?php //print $content_column_class; ?> -->
     <section class="<?php if (!empty($page['sidebar_first'])): ?> col-xs-12 col-sm-12 col-md-8 col-md-push-4 <?php else: ?> col-xs-12 col-sm-12 col-md-12 <?php endif; ?>">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
