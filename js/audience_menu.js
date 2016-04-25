@@ -40,6 +40,16 @@ jQuery(document).ready( function() {
 		jQuery('.audienceBox .title-bg a').css("color","#FFF");
 		
 	});
+	
+	/* Search Functionality */
+	jQuery ('.oya-search a').attr("href","#");
+        jQuery ('.block-search .input-group').prepend("<span class='fa fa-times-circle fa-lg' aria-hidden='true'></span>");
+	jQuery ('.oya-search a').click( function() {
+		jQuery('.block-search').slideDown();
+	});
+        jQuery ('.block-search .fa.fa-times-circle').click( function() {
+		jQuery('.block-search').toggle();
+	});
 });
 
 

@@ -9017,10 +9017,13 @@ section .view-oya-audience-menu .views-row-last .audienceBox {
   padding-right: 110px;
 }
 .tb-megamenu ul.nav > li.utility-link.utlk1 {
-  padding-right: 210px;
+  padding-right: 240px;
 }
 .tb-megamenu ul.nav > li.utility-link.utlk2 {
-  padding-right: 110px;
+  padding-right: 140px;
+}
+.tb-megamenu ul.nav > li.utility-link.utlk3 {
+  padding-right: 45px;
 }
 .tb-megamenu .mega > .mega-dropdown-menu {
   /* display: inline; */
@@ -10047,6 +10050,26 @@ header.navbar-default {
 }
 .sidr-class-tb-megamenu-submenu {
   display: none;
+}
+/*** SEARCH FORM ***/
+.block-search {
+  width: 400px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: none;
+}
+.block-search .form-group {
+  margin-bottom: 0px;
+}
+.block-search button {
+  padding: 2px 10px;
+  border-bottom: 0px;
+}
+.block-search .fa.fa-times-circle {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 /*** CONTENT INNER ***/
 /* body.node-type-content-inner {
