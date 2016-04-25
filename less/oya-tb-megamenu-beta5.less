@@ -127,16 +127,18 @@
 	/* display: inline; */
 }
 .tb-megamenu:first-child .dropdown-menu  .tb-megamenu-column {
-	& li:first-child {
+	& ul.level-1 {
+		&>li {
 
-		& > a.mega-group-title {
-			font-family: @oya-font-montserrat;
-			font-size: 18px;
-			line-height: 20px;
-			color: @oya-blue-color;
-			text-transform: uppercase;
-			&:hover {
-				color: @oya-blue2-color;
+			&>a {
+				font-family: @oya-font-montserrat;
+				font-size: 18px;
+				line-height: 20px;
+				color: @oya-blue-color;
+				text-transform: uppercase;
+				&:hover {
+					color: @oya-blue2-color;
+				}
 			}
 		}
 	}

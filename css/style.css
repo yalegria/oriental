@@ -8528,13 +8528,28 @@ section#block-views-oya-header-image-block .view-content .views-field-name {
 .oya-sidebar-nav .navbar-toggle .icon-bar {
   background-color: #375788;
 }
-/* OYA - Featured Story */
+/* OYA - News (Thumbl-Like) */
+.view-oya-news-thumblr-like- .masonry-item {
+  margin: 0px;
+  padding: 0 15px;
+  border: 0px;
+  margin-bottom: 15px;
+}
+.view-oya-news-thumblr-like- .masonry-item .thumblr-item {
+  background: gold;
+  border: 1px solid #DDD;
+}
+.view-oya-news-thumblr-like- .col-md-3 {
+  /* background: orange; */
+
+}
+/* OYA - Featured Story - CAROUSEL */
 section#block-views-oya-carousel-block {
   color: #FFF;
 }
 section#block-views-oya-carousel-block h3 {
-  font-size: 46px;
-  line-height: 55px;
+  font-size: 18px;
+  line-height: 18px;
 }
 section#block-views-oya-carousel-block h3 a {
   text-decoration: none;
@@ -8559,6 +8574,9 @@ section#block-views-oya-carousel-block div.carousel-img-container {
 section#block-views-oya-carousel-block div.carousel-img-container img {
   position: relative;
   z-index: -1;
+}
+section#block-views-oya-carousel-block div.carousel-caption {
+  padding-bottom: 20px;
 }
 section#block-views-oya-carousel-block div.carousel-caption p {
   font-size: 22px;
@@ -9008,14 +9026,14 @@ section .view-oya-audience-menu .views-row-last .audienceBox {
   /* display: inline; */
 
 }
-.tb-megamenu:first-child .dropdown-menu .tb-megamenu-column li:first-child > a.mega-group-title {
+.tb-megamenu:first-child .dropdown-menu .tb-megamenu-column ul.level-1 > li > a {
   font-family: 'Montserrat Regular', sans-serif;
   font-size: 18px;
   line-height: 20px;
   color: #375788;
   text-transform: uppercase;
 }
-.tb-megamenu:first-child .dropdown-menu .tb-megamenu-column li:first-child > a.mega-group-title:hover {
+.tb-megamenu:first-child .dropdown-menu .tb-megamenu-column ul.level-1 > li > a:hover {
   color: #4975b9;
 }
 @media (min-width: 992px) {
@@ -10327,6 +10345,25 @@ section.block-quicktabs .tab-content .views-field-title a {
   section#block-views-oya-areas-of-focus-block h2 {
     padding: 15px 20px;
   }
+  /* OYA - Carousel */
+  section#block-views-oya-carousel-block h3 {
+    margin-bottom: 5px;
+  }
+  section#block-views-oya-carousel-block .carousel-control span {
+    height: 20px;
+  }
+  section#block-views-oya-carousel-block div.carousel-caption {
+    left: 7%;
+    right: 7%;
+    bottom: 5%;
+    padding-bottom: 5px;
+  }
+  section#block-views-oya-carousel-block div.carousel-caption p a {
+    font-size: 16px;
+  }
+  section#block-views-oya-carousel-block div.carousel-caption p span.fa {
+    font-size: 16px;
+  }
   /* FOOTER */
   .footer.container {
     padding: 0px;
@@ -10343,6 +10380,21 @@ section.block-quicktabs .tab-content .views-field-title a {
     font-size: 20px;
     padding: 0 0 20px 40px;
     line-height: 20px;
+  }
+  /* OYA - Carousel */
+  section#block-views-oya-carousel-block h3 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+  section#block-views-oya-carousel-block div.carousel-caption {
+    left: 5%;
+    right: 5%;
+    padding-bottom: 15px;
+  }
+  section#block-views-oya-carousel-block div.carousel-caption p {
+    font-size: 18px;
+    line-height: 22px;
+    width: 100%;
   }
   .special-block-one .apply-now-block-subtext {
     text-align: right;
@@ -10499,6 +10551,24 @@ section.block-quicktabs .tab-content .views-field-title a {
   }
   section#block-views-oya-areas-of-focus-block h2 {
     padding: 30px 50px;
+  }
+}
+/* AT MIN MEDIUM */
+@media (min-width: 1200px) {
+  /* OYA - Carousel */
+  section#block-views-oya-carousel-block h3 {
+    font-size: 46px;
+    line-height: 55px;
+  }
+  section#block-views-oya-carousel-block div.carousel-caption {
+    left: 14%;
+    right: 14%;
+    padding-bottom: 15px;
+  }
+  section#block-views-oya-carousel-block div.carousel-caption p {
+    font-size: 22px;
+    line-height: 26px;
+    width: 80%;
   }
 }
 /* AT MIN LARGE */

@@ -108,16 +108,31 @@ section#block-views-oya-header-image-block {
 }
 
 
+/* OYA - News (Thumbl-Like) */
+.view-oya-news-thumblr-like- {
+	& .masonry-item {
+		margin: 0px;
+		padding: 0 15px;
+		border: 0px;
+		margin-bottom: 15px;
+		& .thumblr-item {
+			background: gold;
+                	border: 1px solid #DDD;
+		}
+	}
+	& .col-md-3 {
+		/* background: orange; */
+	}
+}
 
 
-
-/* OYA - Featured Story */
+/* OYA - Featured Story - CAROUSEL */
 
 section#block-views-oya-carousel-block {
 	color: #FFF;
 	& h3 {
-		font-size: 46px;
-		line-height: 55px;
+		font-size: 18px;
+		line-height: 18px;
 		& a {
 			text-decoration: none;
 			color: #FFF;
@@ -144,6 +159,7 @@ section#block-views-oya-carousel-block {
 		}
 	}
 	& div.carousel-caption {
+		padding-bottom: 20px;
 		& p {
 			font-size: 22px;
 			line-height: 26px;

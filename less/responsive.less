@@ -60,11 +60,34 @@
 		}
 	}
 
+        /* OYA - Carousel */
+        section#block-views-oya-carousel-block {
+                & h3 {  
+			margin-bottom: 5px;
+                }
+        	& .carousel-control span {
+                	height: 20px;
+		}
+                & div.carousel-caption {
+                        left: 7%;
+                        right: 7%;
+			bottom: 5%;
+                        padding-bottom: 5px;
+			& p {
+				& a {
+					font-size: 16px;
+				}
+				& span.fa {
+					font-size: 16px;
+				}
+			}
+                }
+        }
+
         /* FOOTER */
 	.footer.container {
 		padding: 0px;
 	}
-
 }
 
 /* AT MIN SMALL */
@@ -79,6 +102,23 @@
                 padding: 0 0 20px 40px;
                 line-height: 20px;
         }
+        /* OYA - Carousel */
+        section#block-views-oya-carousel-block {
+                & h3 {
+                        font-size: 34px;
+                        line-height: 34px;
+                }
+                & div.carousel-caption {
+                        left: 5%;
+                        right: 5%;
+                        padding-bottom: 15px;
+                        & p {
+                                font-size: 18px;
+                                line-height: 22px;
+                                width: 100%;
+                        }
+                }
+        }
 
         .special-block-one .apply-now-block-subtext {
                 text-align: right;
@@ -92,45 +132,45 @@
         }
 
 	.image-btn-hover-container {
-        position: absolute;
-        background: rgba(0,0,0,0.5);
-        top: 75%;
-        width: 100%;
-        height: 100%;
-        transition: all 0.7s ease-out;
-        color: #FFF;
-        text-align: center;
-        & .field {
-                padding: 20px;
-        }
-        & .field:first-child .field-item {
-                font-size: 26px;
-                line-height: 30px;
-		font-family: @oya-font-adelle-regular;
-        }
-        & .img-text .field .field-items .field-item {
-                font-size: 24px;
-                line-height: 27px;
-                color: #F0F0F0;
-        }
-        &:hover {
-                top: 0%;
-                background: rgba(55, 87, 136, 0.5);
-        }
-        & .read-more {
-                background: @oya-blue-color;
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                padding: 20px;
-                & a {
-                        color: #FFF;
-                        text-transform: uppercase;
-                        text-decoration: none;
-                        font-size: 24px;
-			font-family: @oya-font-montserrat;
-                }
-        }
+        	position: absolute;
+        	background: rgba(0,0,0,0.5);
+        	top: 75%;
+        	width: 100%;
+        	height: 100%;
+        	transition: all 0.7s ease-out;
+        	color: #FFF;
+        	text-align: center;
+        	& .field {
+                	padding: 20px;
+        	}
+        	& .field:first-child .field-item {
+                	font-size: 26px;
+                	line-height: 30px;
+			font-family: @oya-font-adelle-regular;
+        	}
+        	& .img-text .field .field-items .field-item {
+                	font-size: 24px;
+                	line-height: 27px;
+                	color: #F0F0F0;
+        	}
+        	&:hover {
+                	top: 0%;
+                	background: rgba(55, 87, 136, 0.5);
+        	}
+        	& .read-more {
+                	background: @oya-blue-color;
+                	position: absolute;
+                	bottom: 0;
+                	width: 100%;
+                	padding: 20px;
+                	& a {
+                        	color: #FFF;
+                        	text-transform: uppercase;
+                        	text-decoration: none;
+                        	font-size: 24px;
+				font-family: @oya-font-montserrat;
+                	}
+        	}
 	}
 	section#block-views-oya-areas-of-focus-block {
         	margin-top: 80px;
@@ -165,6 +205,7 @@
 		font-size: 16px;
 	}
 
+
 	/* OYA - Sub Navigation */
 	.oya-sidebar-nav {
 		background: @oya-gray-color;
@@ -190,12 +231,12 @@
 		}
 	}
 
-/*** CONTENT INNER ***/
-body.node-type-content-inner {
-        & section div.view-oya-sub-navigation-sibling {
-                display: none;
-        }
-}
+	/*** CONTENT INNER ***/
+	body.node-type-content-inner {
+        	& section div.view-oya-sub-navigation-sibling {
+                	display: none;
+        	}
+	}
 
 }
 
@@ -247,6 +288,8 @@ body.node-type-content-inner {
                 padding: 0 0 20px 40px;
                 line-height: 32px;
 	}
+
+
 	/* Areas of Focus */
 	section#block-views-oya-areas-of-focus-block {
 		& .view-oya-areas-of-focus {
@@ -259,6 +302,29 @@ body.node-type-content-inner {
                 }
         }
 }
+
+/* AT MIN MEDIUM */
+@media (min-width: @screen-lg-min) {
+
+        /* OYA - Carousel */
+        section#block-views-oya-carousel-block {
+                & h3 {  
+                        font-size: 46px;
+                        line-height: 55px;
+                }
+                & div.carousel-caption {
+                        left: 14%;
+                        right: 14%;
+                        padding-bottom: 15px;
+                        & p {
+                                font-size: 22px;
+                                line-height: 26px;
+                                width: 80%;
+                        }
+                }
+        }
+}
+
 
 /* AT MIN LARGE */
 @media (min-width: @screen-sm-min) {
