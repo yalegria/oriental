@@ -9922,12 +9922,19 @@ header.navbar-default {
   line-height: 23px;
 }
 /*** RESPONSIVE MENUS ***/
+.navbar-brand.oya-navbar-brand {
+  color: #999895;
+  padding-right: 5px;
+}
 .sidr {
   background: #FFF;
   box-shadow: none;
 }
 .sidr ul {
   border: 0;
+}
+.sidr ul li:first-child {
+  margin-top: 20px;
 }
 .sidr ul li {
   border: 0px;
@@ -10052,6 +10059,9 @@ header.navbar-default {
   display: none;
 }
 /*** SEARCH FORM ***/
+#sidr-id-block-search-form--2 {
+  display: none;
+}
 .block-search {
   width: 400px;
   position: absolute;
@@ -10184,10 +10194,10 @@ aside .views-field-title a {
 /*** QuickTabs ***/
 section.block-quicktabs {
   background: #f5f4f0;
-  padding: 15px 56px;
+  padding: 15px 20px;
 }
 section.block-quicktabs ul.nav li a {
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   margin-right: 15px;
   color: #656462;
@@ -10220,7 +10230,7 @@ section.block-quicktabs ul.nav li:last-child a {
   margin-right: 0px;
 }
 section.block-quicktabs .tab-content {
-  padding: 40px 56px;
+  padding: 40px 3px;
   /*background: gold;*/
 
 }
@@ -10432,7 +10442,7 @@ section.block-quicktabs .tab-content .views-field-title a {
   .image-btn-hover-container {
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
-    top: 75%;
+    top: 67%;
     width: 100%;
     height: 100%;
     transition: all 0.7s ease-out;
@@ -10440,11 +10450,11 @@ section.block-quicktabs .tab-content .views-field-title a {
     text-align: center;
   }
   .image-btn-hover-container .field {
-    padding: 20px;
+    padding: 15px 6px;
   }
   .image-btn-hover-container .field:first-child .field-item {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 22px;
     font-family: 'Adelle PE Regular', sans-serif;
   }
   .image-btn-hover-container .img-text .field .field-items .field-item {
@@ -10575,8 +10585,58 @@ section.block-quicktabs .tab-content .views-field-title a {
   section#block-views-oya-areas-of-focus-block h2 {
     padding: 30px 50px;
   }
+  .image-btn-hover-container {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 75%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.7s ease-out;
+    color: #FFF;
+    text-align: center;
+  }
+  .image-btn-hover-container .field {
+    padding: 20px;
+  }
+  .image-btn-hover-container .field:first-child .field-item {
+    font-size: 26px;
+    line-height: 30px;
+    font-family: 'Adelle PE Regular', sans-serif;
+  }
+  .image-btn-hover-container .img-text .field .field-items .field-item {
+    font-size: 24px;
+    line-height: 27px;
+    color: #F0F0F0;
+  }
+  .image-btn-hover-container:hover {
+    top: 0%;
+    background: rgba(55, 87, 136, 0.5);
+  }
+  .image-btn-hover-container .read-more {
+    background: #375788;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  .image-btn-hover-container .read-more a {
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Montserrat Regular', sans-serif;
+  }
+  section.block-quicktabs {
+    padding: 15px 56px;
+  }
+  section.block-quicktabs .tab-content {
+    padding: 40px 56px;
+  }
+  section.block-quicktabs ul.nav li a {
+    font-size: 24px;
+  }
 }
-/* AT MIN MEDIUM */
+/* AT MIN LARGE */
 @media (min-width: 1200px) {
   /* OYA - Carousel */
   section#block-views-oya-carousel-block h3 {

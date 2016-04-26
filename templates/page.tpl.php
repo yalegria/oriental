@@ -126,16 +126,6 @@
   </header> <!-- /#page-header -->
 
   <div class="row">
-
-    <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-12 col-md-4" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>
-    <?php /*
-    <section <?php print $content_column_class; ?>>
-    */ ?>
-
     <section class="<?php if (!empty($page['sidebar_first'])): ?> col-xs-12 col-sm-12 col-md-8 col-md-push-4 <?php else: ?> col-xs-12 col-sm-12 col-md-12 <?php endif; ?>">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
@@ -160,11 +150,11 @@
       <?php print render($page['content']); ?>
     </section>
 
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
+    <?php if (!empty($page['sidebar_first'])): ?>
+      <aside class="col-xs-12 col-sm-12 col-md-4 col-md-pull-8" role="complementary">
+        <?php print render($page['sidebar_first']); ?>
+      </aside>  <!-- /#sidebar-first -->
+    <?php endif; ?> 
 
   </div>
   <?php if (!empty($page['page_bottom'])) 
