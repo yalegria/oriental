@@ -8534,10 +8534,43 @@ section#block-views-oya-header-image-block .view-content .views-field-name {
   padding: 0 15px;
   border: 0px;
   margin-bottom: 15px;
+  background: none;
 }
 .view-oya-news-thumblr-like- .masonry-item .thumblr-item {
-  background: gold;
+  background: #f5f4f0;
   border: 1px solid #DDD;
+  position: relative;
+}
+.view-oya-news-thumblr-like- .masonry-item .thumblr-item .thumblr-item-text {
+  padding: 10px;
+}
+.view-oya-news-thumblr-like- .masonry-item .thumblr-item .thumblr-item-text h2 {
+  font-size: 20px;
+}
+.view-oya-news-thumblr-like- .masonry-item .thumblr-item .thumblr-item-text p {
+  color: #555452;
+}
+.view-oya-news-thumblr-like- .masonry-item .thumblr-item-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.view-oya-news-thumblr-like- .masonry-item a:hover {
+  text-decoration: none;
+}
+.view-oya-news-thumblr-like- .masonry-item a:hover .thumblr-item h2 {
+  color: #3f3e3d;
+  z-index: 100;
+  position: relative;
+}
+.view-oya-news-thumblr-like- .masonry-item a:hover .thumblr-item p {
+  color: #FFF;
+  position: relative;
+  z-index: 100;
+}
+.view-oya-news-thumblr-like- .masonry-item a:hover .thumblr-item-hover {
+  background: rgba(18, 166, 185, 0.6);
 }
 .view-oya-news-thumblr-like- .col-md-3 {
   /* background: orange; */

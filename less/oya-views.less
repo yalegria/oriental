@@ -115,9 +115,44 @@ section#block-views-oya-header-image-block {
 		padding: 0 15px;
 		border: 0px;
 		margin-bottom: 15px;
+		background: none;
 		& .thumblr-item {
-			background: gold;
+			background: @oya-gray-color; 
                 	border: 1px solid #DDD;
+			position: relative;
+			& .thumblr-item-text {
+				padding: 10px;
+				& h2 {
+					font-size: 20px;
+				}
+				& p {
+					color: @body-text-color;
+				}
+			}
+		}
+		& .thumblr-item-hover {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+		}
+		a:hover {
+			text-decoration: none;
+			& .thumblr-item {
+				& h2 {
+					color: @oya-black-color;
+					z-index: 100;
+					position: relative;
+				}
+				& p {
+					color: #FFF;
+					position: relative;
+					z-index: 100;
+				}
+			}
+			& .thumblr-item-hover {
+				background: rgba(18, 166, 185, 0.60);
+			}
 		}
 	}
 	& .col-md-3 {
