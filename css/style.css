@@ -9077,7 +9077,7 @@ section .view-oya-audience-menu .views-row-last .audienceBox {
   padding-right: 240px;
 }
 .tb-megamenu ul.nav > li.utility-link.utlk2 {
-  padding-right: 140px;
+  padding-right: 145px;
 }
 .tb-megamenu ul.nav > li.utility-link.utlk3 {
   padding-right: 45px;
@@ -10710,8 +10710,60 @@ section.block-quicktabs .tab-content .views-field-title a {
     line-height: 26px;
     width: 80%;
   }
+  /* Areas of Focus */
+  section#block-views-oya-areas-of-focus-block .view-oya-areas-of-focus {
+    margin-bottom: 40px;
+  }
+  section#block-views-oya-areas-of-focus-block h2 {
+    padding: 30px 50px;
+  }
+  div.image-btn-hover-container {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 70%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.7s ease-out;
+    color: #FFF;
+    text-align: center;
+  }
+  div.image-btn-hover-container .field {
+    padding: 0px;
+    display: table;
+    height: 30%;
+    width: 100%;
+  }
+  div.image-btn-hover-container a > div.field:first-child .field-item {
+    font-size: 34px;
+    line-height: 40px;
+    font-family: 'Adelle PE Regular', sans-serif;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  div.image-btn-hover-container .img-text .field .field-items .field-item {
+    font-size: 24px;
+    line-height: 27px;
+    color: #F0F0F0;
+  }
+  div.image-btn-hover-container:hover {
+    top: 0%;
+    background: rgba(55, 87, 136, 0.5);
+  }
+  div.image-btn-hover-container .read-more {
+    background: #375788;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  div.image-btn-hover-container .read-more a {
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Montserrat Regular', sans-serif;
+  }
 }
-/* AT MIN LARGE */
 @media (min-width: 768px) {
   .row.no-gutter {
     padding: 0px 56px;
