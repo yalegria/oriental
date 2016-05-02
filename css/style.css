@@ -8540,6 +8540,7 @@ section#block-views-oya-header-image-block .view-content .views-field-name {
   background: #f5f4f0;
   border: 1px solid #DDD;
   position: relative;
+  overflow: hidden;
 }
 .view-oya-news-thumblr-like- .masonry-item .thumblr-item .thumblr-item-text {
   padding: 10px;
@@ -8550,26 +8551,49 @@ section#block-views-oya-header-image-block .view-content .views-field-name {
 .view-oya-news-thumblr-like- .masonry-item .thumblr-item .thumblr-item-text p {
   color: #555452;
 }
+.view-oya-news-thumblr-like- .masonry-item .thumblr-item .col-md-6 {
+  color: #FFF;
+  padding: 10px;
+  font-size: 14px;
+  box-shadow: inset 0 0 3px;
+}
+.view-oya-news-thumblr-like- .masonry-item .thumblr-item .thumblr-read-more {
+  background: #12a6b8;
+  text-align: right;
+  text-transform: uppercase;
+}
+.view-oya-news-thumblr-like- .masonry-item .thumblr-item .thumblr-days {
+  background: #0e7a87;
+}
 .view-oya-news-thumblr-like- .masonry-item .thumblr-item-hover {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
 }
-.view-oya-news-thumblr-like- .masonry-item a:hover {
+.view-oya-news-thumblr-like- .masonry-item .thumblr-link {
+  display: block;
+}
+.view-oya-news-thumblr-like- .masonry-item .thumblr-link:hover {
   text-decoration: none;
 }
-.view-oya-news-thumblr-like- .masonry-item a:hover .thumblr-item h2 {
+.view-oya-news-thumblr-like- .masonry-item .thumblr-link:hover .thumblr-item h2 {
   color: #3f3e3d;
   z-index: 100;
   position: relative;
 }
-.view-oya-news-thumblr-like- .masonry-item a:hover .thumblr-item p {
+.view-oya-news-thumblr-like- .masonry-item .thumblr-link:hover .thumblr-item p {
   color: #FFF;
   position: relative;
   z-index: 100;
 }
-.view-oya-news-thumblr-like- .masonry-item a:hover .thumblr-item-hover {
+.view-oya-news-thumblr-like- .masonry-item .thumblr-link:hover .thumblr-item .col-md-6 {
+  z-index: 100;
+}
+.view-oya-news-thumblr-like- .masonry-item .thumblr-link:hover .thumblr-item .thumblr-read-more {
+  background: #c70e2a;
+}
+.view-oya-news-thumblr-like- .masonry-item .thumblr-link:hover .thumblr-item-hover {
   background: rgba(18, 166, 185, 0.6);
 }
 .view-oya-news-thumblr-like- .col-md-3 {
