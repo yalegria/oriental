@@ -403,12 +403,16 @@
 			height: 30%;
 			width: 100%;
                 }
-                & a > div.field:first-child .field-item {
+                & a > div.field:first-child .field-item,
+		  a > div.field:first-child .field-items, {
                         font-size: 34px;
                         line-height: 40px;
                         font-family: @oya-font-adelle-regular;
 			display: table-cell;
 			vertical-align: middle;
+			& .field-item {
+				display: block;
+			}
                 }
                 & .img-text .field .field-items .field-item {
                         font-size: 24px;

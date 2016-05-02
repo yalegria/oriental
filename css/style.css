@@ -10733,12 +10733,17 @@ section.block-quicktabs .tab-content .views-field-title a {
     height: 30%;
     width: 100%;
   }
-  div.image-btn-hover-container a > div.field:first-child .field-item {
+  div.image-btn-hover-container a > div.field:first-child .field-item,
+  div.image-btn-hover-container a > div.field:first-child .field-items {
     font-size: 34px;
     line-height: 40px;
     font-family: 'Adelle PE Regular', sans-serif;
     display: table-cell;
     vertical-align: middle;
+  }
+  div.image-btn-hover-container a > div.field:first-child .field-item .field-item,
+  div.image-btn-hover-container a > div.field:first-child .field-items .field-item {
+    display: block;
   }
   div.image-btn-hover-container .img-text .field .field-items .field-item {
     font-size: 24px;
