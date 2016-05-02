@@ -496,10 +496,23 @@ section.block-quicktabs {
 /********************/
 /*** LANDING PAGE ***/
 /********************/
+#image-btns-container {
+	& .col-md-4 {
+		& .col-md-12 {
+			& .image-btn-hover-container {
+				& .field {
+					height: 50%;
+				}
+			}
+		}
+	}
+
+}
+
 .image-btn-montainer {
 	position: relative;
 	overflow: hidden;
-	border-bottom: 5px solid @oya-blue-color;
+	border-bottom: 10px solid @oya-blue-color;
 	margin-bottom: 3px;
 	& a {
 		color: #FFF;
