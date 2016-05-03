@@ -89,8 +89,3 @@
 
 </div><?php /* class view */ ?>
 
-<div class="row margin-top">
-        <div class="col-xs-12">
-                <a href="/content/upcoming-events" id="see-more-aof" class="see-more">see more upcoming events <span class="fa fa-chevron-circle-right"></span></a>
-        </div>
-</div>
