@@ -8481,7 +8481,8 @@ section#block-views-oya-header-image-block .view-content .views-field-name {
 }
 /* OYA - Menu Back Reset Link */
 .view-oya-menu-back-reset-link {
-  padding: 20px;
+  padding: 0px 20px;
+  margin-bottom: 20px;
 }
 .view-oya-menu-back-reset-link a {
   color: #6f6e6c;
@@ -10147,6 +10148,10 @@ header.navbar-default {
 /*** ASIDE & MAIN CONTENT CONTAINER ***/
 .aside-main-container {
   background: #f5f4f0;
+  padding: 20px 0px;
+}
+body.node-type-lp1 .aside-main-container {
+  padding: 30px 0px;
 }
 /*** FOOTER ***/
 footer {
