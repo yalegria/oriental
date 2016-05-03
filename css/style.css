@@ -9979,6 +9979,9 @@ header.navbar-default {
   font-size: 23px;
   line-height: 23px;
 }
+.oya-sidebar-nav ul.nav {
+  width: 100%;
+}
 /*** RESPONSIVE MENUS ***/
 .navbar-brand.oya-navbar-brand {
   color: #999895;
