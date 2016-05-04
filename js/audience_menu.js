@@ -17,9 +17,11 @@ jQuery(document).ready( function() {
 		jQuery("#" + audienceInfoBox).show();
                 jQuery("#" + audienceInfoBox).mouseover(function() {
 			jQuery("#" + audienceInfoBox).css("display","block");
+ 		        jQuery(this).parents(".view-oya-audience-menu").css("height",430);
 		});
                 jQuery("#" + audienceInfoBox).mouseout(function() {
 			jQuery("#" + audienceInfoBox).css("display","none");
+ 			jQuery(this).parents(".view-oya-audience-menu").css("height",274);
 		});
 
 

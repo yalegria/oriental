@@ -381,11 +381,6 @@ section .view-oya-audience-menu {
 	/* position: relative; */
 	position: initial;
 }
-.audienceBox {
-	/* width: 193px;
-	float: left;
-	margin-right: 2px;*/
-}
 section .view-oya-audience-menu .views-row-last .audienceBox {
 	margin-right: 0px;
 }
@@ -413,6 +408,11 @@ section .view-oya-audience-menu .views-row-last .audienceBox {
 				z-index: 2000;
       			}
 		}
+		& span {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: normal;
+		}
         }
 	& .audience-image {
 		&:after {
@@ -429,20 +429,17 @@ section .view-oya-audience-menu .views-row-last .audienceBox {
 			}
 		}
 	}		
+	& .field-content a {
+		color: @oya-title-color;
+     		font-size: 20px;
+		line-height: 22px;
+		text-transform: uppercase;
+		font-family: @oya-font-montserrat;
+		text-decoration: none;
+	}
 }
-.audienceBox .title-bg span {
-	display: inline-block;
-	vertical-align: middle;
-	line-height: normal;
-}
-.audienceBox .field-content a {
-	color: @oya-title-color;
-     	font-size: 20px;
-	line-height: 22px;
-	text-transform: uppercase;
-	font-family: @oya-font-montserrat;
-	text-decoration: none;
-}
+
+
 #Prospective-Students {
 	/* display: inline; */
 }

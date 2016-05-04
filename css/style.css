@@ -8823,6 +8823,11 @@ section .view-oya-audience-menu .views-row-last .audienceBox {
   border-top-color: #12a6b8;
   z-index: 2000;
 }
+.audienceBox .title-bg span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
 .audienceBox .audience-image:after {
   position: absolute;
   opacity: 0;
@@ -8833,11 +8838,6 @@ section .view-oya-audience-menu .views-row-last .audienceBox {
 }
 .audienceBox .audience-image:hover:after {
   opacity: 1;
-}
-.audienceBox .title-bg span {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
 }
 .audienceBox .field-content a {
   color: #ffffff;
@@ -10703,6 +10703,11 @@ section.block-quicktabs .tab-content .views-field-title a {
   section.block-quicktabs ul.nav li a {
     font-size: 24px;
   }
+  /* VIEWS: Audience Menu */
+  .audienceBox .field-content a {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 /* AT MIN LARGE */
 @media (min-width: 1200px) {
@@ -10778,6 +10783,11 @@ section.block-quicktabs .tab-content .views-field-title a {
     text-decoration: none;
     font-size: 24px;
     font-family: 'Montserrat Regular', sans-serif;
+  }
+  /* VIEWS: Audience Menu */
+  .audienceBox .field-content a {
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 @media (min-width: 768px) {
