@@ -30,7 +30,7 @@
 	}
 	&>li>.dropdown-menu {
 		border-bottom: none;
-		background: rgba(255,255,255,0.8);
+		background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,1));
 		& ul.level-2 {
 			margin: 0px;
 			& li {
@@ -56,7 +56,7 @@
 		border-bottom: none;
 	}
 	& .oya-mm-container {
-		background: rgba(255,255,255,0.8);
+		background: rgba(255,255,255,0.9);
 		position: absolute;
 	}
 	& ul.nav {
@@ -157,10 +157,21 @@
 		background-position: 20% 20%;
 		height: 300px;
 		display: table;
+		font-size: 30px;
+		line-height: 34px;
+		color: @oya-black2-color;
 		& > .mega-inner {
 			display: table-cell;
 			vertical-align: middle;
 			text-align: right;
+		}
+		& a {
+			color: @oya-red-color;
+			font-family: @oya-font-adelle-regular;
+			font-size: 18px;
+			&:hover {
+				color: @oya-red2-color;
+			}
 		}
 	}
 }
