@@ -8625,8 +8625,9 @@ section#block-views-oya-carousel-block div.carousel-img-container {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
   width: 100%;
   height: 100%;
-  display: table-footer-group;
-  position: relative;
+  display: block;
+  /* position: relative;*/
+
   z-index: 10;
 }
 section#block-views-oya-carousel-block div.carousel-img-container img {
