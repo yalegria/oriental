@@ -10615,6 +10615,7 @@ section.block-quicktabs .tab-content .views-field-title a {
     line-height: 68px;
     padding: 0px 0px 20px 40px;
   }
+  /* Naviation */
   .navbar-default .navbar-collapse {
     position: absolute;
     top: 96px;
@@ -10625,9 +10626,21 @@ section.block-quicktabs .tab-content .views-field-title a {
     float: left;
   }
   .navbar-default .navbar-nav > li > a {
-    font-size: 22px;
-    /* text-transform: uppercase; */
-  
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .tb-megamenu ul.nav li.utility-link a {
+    font-size: 15px;
+  }
+  .tb-megamenu ul.nav li.utility-link.utility-link.utlk1 {
+    padding-right: 185px;
+  }
+  .tb-megamenu ul.nav li.utility-link.utility-link.utlk2 {
+    padding-right: 107px;
+  }
+  .tb-megamenu ul.nav li.utility-link.utility-link.utlk3 {
+    padding-right: 25px;
   }
   .oya-sidebar-nav .navbar-collapse {
     position: relative;
@@ -10717,6 +10730,24 @@ section.block-quicktabs .tab-content .views-field-title a {
 }
 /* AT MIN LARGE */
 @media (min-width: 1200px) {
+  /* Navigation */
+  .navbar-default .navbar-nav > li > a {
+    font-size: 22px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .tb-megamenu ul.nav li.utility-link a {
+    font-size: 18px;
+  }
+  .tb-megamenu ul.nav li.utility-link.utility-link.utlk1 {
+    padding-right: 240px;
+  }
+  .tb-megamenu ul.nav li.utility-link.utility-link.utlk2 {
+    padding-right: 145px;
+  }
+  .tb-megamenu ul.nav li.utility-link.utility-link.utlk3 {
+    padding-right: 45px;
+  }
   /* OYA - Carousel */
   section#block-views-oya-carousel-block h3 {
     font-size: 46px;
