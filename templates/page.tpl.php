@@ -125,7 +125,7 @@
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
 
-  <div class="row">
+  <div class="row aside-main-container">
     <section class="<?php if (!empty($page['sidebar_first'])): ?> col-xs-12 col-sm-12 col-md-8 col-md-push-4 <?php else: ?> col-xs-12 col-sm-12 col-md-12 <?php endif; ?>">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
