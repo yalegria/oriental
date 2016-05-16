@@ -9019,6 +9019,7 @@ section .view-oya-audience-menu .views-row-last .audienceBox {
 .tb-megamenu .oya-mm-container {
   background: rgba(255, 255, 255, 0.9);
   position: absolute;
+  width: 100%;
 }
 .tb-megamenu ul.nav {
   width: 100%;
