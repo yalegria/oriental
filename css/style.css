@@ -10183,7 +10183,8 @@ footer .region-footer section:last-child {
 }
 footer .footer-menu-section {
   display: inline-block;
-  width: 370px;
+  /* width: 370px; */
+
   margin-top: 25px;
 }
 footer .footer-socialmedia-section {
@@ -10206,6 +10207,7 @@ footer .region-footer ul.menu.nav li a {
   color: #FFF;
   border-right: 1px solid #FFF;
   line-height: 0px;
+  font-size: 14px;
 }
 footer .region-footer ul.menu.nav li a:hover {
   text-decoration: underline;
@@ -10476,6 +10478,9 @@ section.block-quicktabs .tab-content .views-field-title a {
   .footer.container {
     padding: 0px;
   }
+  .footer-logos {
+    padding: 0px 20px;
+  }
 }
 /* AT MIN SMALL */
 @media (min-width: 768px) {
@@ -10513,6 +10518,10 @@ section.block-quicktabs .tab-content .views-field-title a {
   }
   footer .footer-menu-section {
     margin-left: 36px;
+    width: 370px;
+  }
+  footer .region-footer ul.menu.nav li a {
+    font-size: 18px;
   }
   .image-btn-hover-container {
     position: absolute;
