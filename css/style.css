@@ -10177,6 +10177,11 @@ header.navbar-default {
   background: #f5f4f0;
   padding: 20px 0px;
 }
+.aside-main-container section .region-content article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 body.node-type-lp1 .aside-main-container {
   padding: 30px 0px;
 }
